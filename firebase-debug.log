@@ -530,3 +530,26 @@
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [debug] [2026-01-23T13:17:57.263Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
 [debug] [2026-01-23T13:17:57.263Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T14:32:58.519Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T14:32:58.520Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T14:32:58.521Z] Checked if tokens are valid: false, expires at: 1769175697137
+[debug] [2026-01-23T14:32:58.527Z] Checked if tokens are valid: false, expires at: 1769175697137
+[debug] [2026-01-23T14:32:58.529Z] > refreshing access token with scopes: []
+[debug] [2026-01-23T14:32:58.539Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-23T14:32:58.539Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T14:32:58.601Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-23T14:32:58.608Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T14:32:58.664Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T14:32:58.830Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 429
+[debug] [2026-01-23T14:32:58.830Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"error":{"code":429,"message":"Quota exceeded for quota metric 'All requests' and limit 'All requests per minute' of service 'cloudbilling.googleapis.com' for consumer 'project_number:563584335869'.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"RATE_LIMIT_EXCEEDED","domain":"googleapis.com","metadata":{"quota_unit":"1/min/{project}","quota_limit_value":"400","service":"cloudbilling.googleapis.com","quota_limit":"StandardQuotaPerMinutePerProject","quota_location":"global","consumer":"projects/563584335869","quota_metric":"cloudbilling.googleapis.com/standard_quota"}},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Request a higher quota limit.","url":"https://cloud.google.com/docs/quotas/help/request_increase"}]}]}}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T14:33:27.568Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T14:33:27.568Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T14:33:27.568Z] Checked if tokens are valid: true, expires at: 1769182377609
+[debug] [2026-01-23T14:33:27.568Z] Checked if tokens are valid: true, expires at: 1769182377609
+[debug] [2026-01-23T14:33:27.568Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T14:33:27.701Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 429
+[debug] [2026-01-23T14:33:27.705Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"error":{"code":429,"message":"Quota exceeded for quota metric 'All requests' and limit 'All requests per minute' of service 'cloudbilling.googleapis.com' for consumer 'project_number:563584335869'.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"RATE_LIMIT_EXCEEDED","domain":"googleapis.com","metadata":{"quota_unit":"1/min/{project}","quota_limit_value":"400","service":"cloudbilling.googleapis.com","quota_limit":"StandardQuotaPerMinutePerProject","quota_location":"global","consumer":"projects/563584335869","quota_metric":"cloudbilling.googleapis.com/standard_quota"}},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Request a higher quota limit.","url":"https://cloud.google.com/docs/quotas/help/request_increase"}]}]}}
