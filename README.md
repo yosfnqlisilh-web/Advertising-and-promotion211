@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# مشروع موقع فن الإعلان للمقاولات
 
-## Getting Started
+هذا المشروع عبارة عن موقع إلكتروني حديث ومتجاوب لشركة **فن الإعلان للمقاولات**، وهي شركة متخصصة في أعمال الدعاية والإعلان والمقاولات بمدينة الرياض.
 
-First, run the development server:
+تم تطوير هذا الموقع بواسطة **Gemini AI** داخل بيئة **Firebase Studio**، بناءً على طلبات المستخدم وتوجيهاته.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 الهدف من المشروع
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+يهدف الموقع إلى عرض خدمات الشركة وأعمالها السابقة بطريقة احترافية وجذابة، مع تسهيل طرق التواصل المباشر للعملاء المحتملين للحصول على استشارات أو عروض أسعار.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ الميزات والتقنيات
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **الإطار (Framework):** تم بناء الموقع باستخدام [Next.js](https://nextjs.org/) مع App Router، مما يضمن أداءً عاليًا وتجربة مستخدم سريعة.
+- **التصميم (Styling):** تم استخدام [Tailwind CSS](https://tailwindcss.com/) لتصميم واجهة مستخدم عصرية وأنيقة، مع نظام ألوان داكن يعطي إحساسًا بالفخامة.
+- **التجاوب (Responsiveness):** الموقع متجاوب تمامًا ويعمل بشكل ممتاز على جميع الأجهزة، من شاشات سطح المكتب الكبيرة إلى الهواتف المحمولة.
+- **الأقسام الرئيسية:**
+  - **واجهة رئيسية جذابة:** مع صورة خلفية ثابتة وعنوان رئيسي متحرك.
+  - **قسم الخدمات:** عرض مفصل للخدمات التي تقدمها الشركة.
+  - **قسم أعمالنا:** معرض لأبرز المشاريع التي تم تنفيذها.
+  - **قسم من نحن:** نبذة تعريفية عن الشركة وخبراتها.
+  - **قسم اتصل بنا:** يتضمن نموذج تواصل يعمل بـ Server Actions لإرسال رسائل بريد إلكتروني مباشرة، بالإضافة إلى معلومات الاتصال وخريطة تفاعلية.
+- **تحسين محركات البحث (SEO):** تمت إضافة بيانات وصفية (Metadata) غنية لضمان ظهور الموقع بشكل جيد في نتائج محركات البحث.
+- **النشر (Deployment):** سيتم نشر الموقع باستخدام **Firebase App Hosting** عبر التكامل مع **GitHub**، مما يتيح عملية نشر مستمرة (CI/CD) للتحديثات المستقبلية.
 
-## Learn More
+## 🚀 كيفية تشغيل المشروع محليًا
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  **تثبيت الحزم:**
+    ```bash
+    npm install
+    ```
+2.  **تشغيل خادم التطوير:**
+    ```bash
+    npm run dev
+    ```
+3.  افتح [http://localhost:3000](http://localhost:3000) في متصفحك.

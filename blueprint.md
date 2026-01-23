@@ -1,65 +1,46 @@
+# Blueprint: فن الإعلان للمقاولات
 
-# Blueprint: فن الإعلان - الموقع التعريفي
+## Overview
 
-## نظرة عامة
+A modern, responsive website for "فن الإعلان", a contracting company specializing in advertising and decoration works in Riyadh. The site aims to showcase their services, portfolio, and provide easy and direct contact methods for potential clients.
 
-هذا المستند هو المخطط الرئيسي لتطوير الموقع التعريفي لشركة "فن الإعلان". يهدف الموقع إلى عرض الخدمات الاحترافية للشركة، أعمالها السابقة، وتسهيل التواصل مع العملاء المحتملين.
+## Implemented Features & Design
 
-## الخطة الحالية: استكمال التطوير (الإصدار 2.1)
+*   **Framework:** Next.js with App Router.
+*   **Styling:** Tailwind CSS with a dark gray theme (`bg-gray-900`, `bg-gray-800`).
+*   **Header & Navigation:**
+    *   Sticky header with a blurred background effect.
+    *   Interactive "Contact Us" button opening a modal.
+    *   Fully responsive mobile menu.
+*   **Hero Section:**
+    *   Full-screen with a fixed background image.
+    *   Animated gradient headline.
+*   **Services Section:**
+    *   A grid of `ServiceCard` components.
+    *   The "Maintenance and Restoration" card's gallery was updated with an additional image.
+*   **Our Work Section:**
+    *   A grid of `WorkCard` components showcasing portfolio projects.
+    *   **Portfolio Item Update:** The card for "هيكل حديدي لسور إعلاني" was updated to "لافتة أرض فضاء". The description was refined to be more concise and marketable by removing the detailed list of materials.
+*   **Contact Section:**
+    *   Server Action form sending emails to `yosfnqlisilh@gmail.com` via Resend.
+    *   Displayed contact email corrected to `yosfnqlisilh@gmail.com`.
+    *   Includes a map, clickable phone number, and address.
+*   **Footer:**
+    *   Displays official, centered SVG logos for Facebook, Instagram, and LinkedIn.
+*   **Contact Modal:**
+    *   A custom modal (`ContactModal.tsx`) with direct **WhatsApp** and **Phone Call** buttons.
 
-**الهدف:** تحسين تجربة المستخدم عبر إصلاح الأخطاء المرئية وإضافة محتوى جديد وتصاميم أكثر احترافية.
+## Latest Change Request & Fixes
 
-### المرحلة الأولى: تحسين قسم الخدمات وأعمالنا
-- **[مكتمل]** إصلاح مشكلة ظهور الأيقونات بشكل غير صحيح في قسم "خدماتنا".
-- **[مكتمل]** إضافة خدمة سادسة ("أعمال الديكور") لموازنة التصميم الشبكي وتحقيق التناسق.
-- **[مكتمل]** استبدال معرض "أعمالنا" الدوّار (Carousel) بتصميم شبكي (Grid) احترافي يعرض 6 مشاريع مع تأثيرات بصرية عند التمرير.
-- **[مكتمل]** حذف المكونات والملفات القديمة التي لم تعد قيد الاستخدام (`OurWorkCarousel.tsx`).
-- **[مكتمل]** تحديث هذا المخطط (`blueprint.md`) ليعكس آخر التغييرات.
-
-### المرحلة الثانية: المراحل القادمة
-- **[قادم]** تصميم وبناء صفحة مستقلة لـ "معرض الأعمال" تحتوي على جميع المشاريع مع فلاتر للتصنيف.
-- **[قادم]** إضافة شهادات وآراء العملاء لزيادة الثقة.
-- **[قادم]** تحسين أداء الموقع وسرعة التحميل.
-
----
-
-## الخدمات والخصائص المطبقة (الإصدار الحالي)
-
-### **الخدمات الأساسية:**
-
-1.  **تكسية الواجهات:**
-    *   **الوصف:** تنفيذ وتلبيس واجهات المباني باستخدام الكلادينج، الجبس بورد، والأسمنت بورد.
-    *   **الأيقونة:** `cladding.svg`
-
-2.  **اللوحات الإعلانية:**
-    *   **الوصف:** تصميم وتصنيع كافة أنواع لوحات المحلات، من الحروف البارزة إلى الشاشات الرقمية.
-    *   **الأيقونة:** `signage.svg`
-
-3.  **الأسوار والهياكل:**
-    *   **الوصف:** بناء أسوار دعائية بهياكل معدنية متنوعة مصممة خصيصًا للمشاريع.
-    *   **الأيقونة:** `structures.svg`
-
-4.  **الطباعة الرقمية:**
-    *   **الوصف:** تقديم حلول الطباعة الرقمية بجميع أنواعها لتغطية الاحتياجات الإعلانية.
-    *   **الأيقونة:** `printing.svg`
-
-5.  **أعمال الحديد:**
-    *   **الوصف:** تصنيع وتركيب المظلات والسواتر والهياكل المعدنية المساندة لمشاريع الدعاية.
-    *   **الأيقونة:** `metalwork.svg`
-
-6.  **أعمال الديكور:**
-    *   **الوصف:** تنفيذ الديكورات الداخلية والخارجية للمحلات التجارية والمكاتب بأحدث التصاميم.
-    *   **الأيقونة:** `decor.svg`
-
-### **التصميم والواجهة:**
-
-*   **الهوية البصرية:** استخدام لوحة ألوان تعتمد على الأسود والذهبي للفخامة.
-*   **التجاوب:** تصميم متجاوب بالكامل يعمل على جميع الأجهزة.
-*   **قسم أعمالنا:** معرض صور شبكي احترافي لعرض المشاريع.
-*   **أقسام الموقع:**
-    *   الرئيسية (Hero Section)
-    *   خدماتنا
-    *   أعمالنا
-    *   من نحن
-    *   اتصل بنا
-    *   تذييل (Footer)
+*   **Request:**
+    1.  Refine the description for the "لافتة أرض فضاء" (Vacant Land Sign) portfolio item by removing a specific sentence about the materials.
+    2.  (Previously) Update the title and initial description for the same portfolio item.
+    3.  (Previously) Add a specific image to the "Maintenance and Restoration" service card.
+    4.  (Previously) Fix a critical bug where content disappeared and social media icons were incorrect.
+    5.  (Previously) Correct the displayed contact email.
+*   **Execution & Fixes:**
+    1.  **Text Refinement:** The description for the "لافتة أرض فضاء" item in the `works` array in `src/app/page.tsx` was shortened as requested.
+    2.  **Portfolio Update:** The title and description for the item were changed.
+    3.  **Image Addition:** An image was added to the restoration service card.
+    4.  **Code & UI Restoration:** The main page was rebuilt, and UI issues were fixed.
+    5.  **Email Correction:** The contact email was updated.

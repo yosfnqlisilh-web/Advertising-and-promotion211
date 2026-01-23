@@ -1,12 +1,49 @@
+
 import type { Metadata } from "next";
-import { Tajawal } from "next/font/google";
+import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
 
-const tajawal = Tajawal({ subsets: ["arabic"], weight: ["400", "500", "700"] });
+const notoKufiArabic = Noto_Kufi_Arabic({ 
+  subsets: ["arabic"],
+  weight: ['400', '700', '900'] 
+});
 
 export const metadata: Metadata = {
-  title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية بالرياض",
-  description: "متخصصون في تكسية واجهات المباني بالكلادنج، وتنفيذ اللوحات الإعلانية، والحروف البارزة، وأعمال الحدادة والديكور في الرياض.",
+  title: "فن الإعلان للمقاولات | واجهات كلادينج ولوحات إعلانية بالرياض",
+  description: "شركة فن الإعلان للمقاولات، متخصصون في تصميم وتنفيذ واجهات الكلادينج، اللوحات الإعلانية، أعمال الحديد، والهياكل المعدنية في الرياض. جودة عالية وتصاميم مبتكرة.",
+  keywords: "كلادينج, لوحات إعلانية, حروف بارزة, هياكل معدنية, أعمال حديد, تصميم واجهات, مقاولات, الرياض, فن الإعلان",
+  authors: [{ name: "فن الإعلان للمقاولات" }],
+  creator: "Gemini AI",
+  publisher: "Firebase",
+  openGraph: {
+    title: "فن الإعلان للمقاولات | واجهات كلادينج ولوحات إعلانية بالرياض",
+    description: "نقدم حلولاً مبتكرة في الكلادينج واللوحات الإعلانية وأعمال الديكور التي تضمن تميز علامتك التجارية في قلب الرياض.",
+    url: "YOUR_DEPLOYED_URL_HERE", // I will replace this after deployment
+    siteName: "فن الإعلان للمقاولات",
+    images: [
+      {
+        url: "https://i.imgur.com/5aTvOYa.png", // Main cladding image
+        width: 800,
+        height: 600,
+        alt: "واجهة كلادينج حديثة",
+      },
+       {
+        url: "https://i.imgur.com/EzNhASb.jpg", // Main sign image
+        width: 800,
+        height: 600,
+        alt: "لوحة إعلانية بارزة",
+      },
+    ],
+    locale: "ar_SA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "فن الإعلان للمقاولات | واجهات كلادينج ولوحات إعلانية بالرياض",
+    description: "متخصصون في تصميم وتنفيذ واجهات الكلادينج واللوحات الإعلانية بالرياض.",
+    images: ["https://i.imgur.com/5aTvOYa.png"], 
+  },
+  
 };
 
 export default function RootLayout({
@@ -16,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={tajawal.className}>{children}</body>
+      <body className={notoKufiArabic.className}>{children}</body>
     </html>
   );
 }

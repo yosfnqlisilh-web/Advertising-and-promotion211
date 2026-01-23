@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-tajawal)', 'sans-serif'],
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',

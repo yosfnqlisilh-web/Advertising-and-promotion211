@@ -1,16 +1,15 @@
+
 {
   "hosting": {
-    "public": ".next",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "frameworksBackend": {
+      "id": "advertising-app211",
+      "region": "us-east4"
+    }
   }
 }
