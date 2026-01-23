@@ -1,0 +1,532 @@
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-22T23:56:30.252Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:30.254Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-22T23:56:30.256Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.257Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.257Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:30.258Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-22T23:56:30.258Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.259Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.261Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-22T23:56:30.320Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-22T23:56:30.521Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-22T23:56:30.522Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-22T23:56:30.534Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.535Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.535Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.536Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.536Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.536Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.537Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.537Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.538Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.538Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.538Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.539Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.539Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.539Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.565Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.565Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.565Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.565Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.566Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.566Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.570Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.570Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.573Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.573Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.576Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.576Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.578Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.579Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.581Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.581Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.583Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.583Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.585Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.585Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.588Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-22T23:56:30.588Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:30.964Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-22T23:56:30.964Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-22T23:56:30.965Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.966Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.966Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.966Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.966Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.967Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.973Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.973Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.979Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.979Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.979Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.980Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.980Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.980Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.995Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.996Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.996Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.996Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:30.997Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-22T23:56:30.997Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.000Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com [none]
+[debug] [2026-01-22T23:56:31.000Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.008Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-22T23:56:31.008Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.010Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-01-22T23:56:31.010Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.013Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com [none]
+[debug] [2026-01-22T23:56:31.013Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.014Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-22T23:56:31.015Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.016Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-01-22T23:56:31.017Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.018Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-22T23:56:31.019Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.020Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-22T23:56:31.020Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-22T23:56:31.309Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-22T23:56:31.309Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-22T23:56:31.416Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-22T23:56:31.416Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.445Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-01-22T23:56:31.446Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.487Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-22T23:56:31.488Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.495Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com 200
+[debug] [2026-01-22T23:56:31.495Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.520Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com 200
+[debug] [2026-01-22T23:56:31.520Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.530Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-22T23:56:31.530Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.537Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com 200
+[debug] [2026-01-22T23:56:31.537Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.553Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-22T23:56:31.558Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-22T23:56:31.565Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:31.566Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-22T23:56:31.566Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:31.566Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:31.566Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-22T23:56:31.717Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-22T23:56:31.721Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-22T23:56:31.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:31.726Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-22T23:56:31.747Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-22T23:56:31.750Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-22T23:56:31.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:31.770Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-22T23:56:31.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:31.770Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-22T23:56:31.770Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:31.771Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:31.771Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:31.771Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-22T23:56:31.771Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-22T23:56:31.772Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-22T23:56:31.833Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com 200
+[debug] [2026-01-22T23:56:31.836Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.865Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-01-22T23:56:31.866Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.885Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com 200
+[debug] [2026-01-22T23:56:31.885Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/fcm.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.903Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com 200
+[debug] [2026-01-22T23:56:31.903Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/storage.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.917Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-22T23:56:31.917Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.919Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-22T23:56:31.919Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.925Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-22T23:56:31.925Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.931Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-22T23:56:31.931Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-22T23:56:31.936Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-22T23:56:31.936Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-22T23:56:31.942Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:31.942Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-22T23:56:32.367Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-22T23:56:32.367Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-22T23:56:32.373Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-22T23:56:32.374Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T00:20:16.993Z] ----------------------------------------------------------------------
+[debug] [2026-01-23T00:20:16.997Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase apphosting:backends:create --project=advertising-and-promotion211
+[debug] [2026-01-23T00:20:16.997Z] CLI Version:   15.4.0
+[debug] [2026-01-23T00:20:16.998Z] Platform:      linux
+[debug] [2026-01-23T00:20:16.998Z] Node Version:  v20.18.1
+[debug] [2026-01-23T00:20:16.998Z] Time:          Fri Jan 23 2026 00:20:16 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-23T00:20:16.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-23T00:20:18.418Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T00:20:18.419Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T00:20:18.421Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:18.421Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:18.422Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-23T00:20:18.423Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:19.348Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-23T00:20:19.354Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-23T00:20:19.355Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:19.357Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:19.358Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com:enable [none]
+[debug] [2026-01-23T00:20:19.358Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com:enable x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:19.952Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com:enable 200
+[debug] [2026-01-23T00:20:19.952Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseapphosting.googleapis.com:enable [omitted]
+[debug] [2026-01-23T00:20:29.973Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:29.974Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:29.974Z] >>> [apiv2][query] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus [none]
+[debug] [2026-01-23T00:20:30.211Z] <<< [apiv2][status] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus 200
+[debug] [2026-01-23T00:20:30.211Z] <<< [apiv2][body] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus {"overallStatus":"ACCEPTED","uTosStatus":{"tos":{"id":"firebase","tosId":"FIREBASE_UNIVERSAL"},"status":"ACCEPTED","acceptedVersion":7},"childTosStatus":[{"tos":{"id":"cloud","tosId":"CLOUD_PLATFORM"},"status":"ACCEPTED","acceptedVersion":39},{"tos":{"id":"firebase_b2b","tosId":"FIREBASE_B2B"},"status":"ACCEPTED","acceptedVersion":1},{"tos":{"id":"universal","tosId":"GOOGLE_APIS"},"status":"ACCEPTED","acceptedVersion":6}],"termsUrl":"https://firebase.google.com/terms","perServiceStatus":[{"tosId":"APP_CHECK","serviceStatus":{"tos":{"id":"app_check","tosId":"APP_CHECK"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"APP_HOSTING_TOS","serviceStatus":{"tos":{"id":"app_hosting","tosId":"APP_HOSTING_TOS"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"FIREBASE_DATA_CONNECT","serviceStatus":{"tos":{"id":"data_connect","tosId":"FIREBASE_DATA_CONNECT"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"CORE_APPS","serviceStatus":{"tos":{"id":"core_apps","tosId":"CORE_APPS"},"status":"ACCEPTED","acceptedVersion":1}},{"tosId":"VERTEX_AI_IN_FIREBASE","serviceStatus":{"tos":{"id":"vertex_ai_in_firebase","tosId":"VERTEX_AI_IN_FIREBASE"},"status":"ACCEPTED","acceptedVersion":2}},{"tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION","serviceStatus":{"tos":{"id":"firebase_crashlytics_app_distribution","tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION"},"status":"ACCEPTED","acceptedVersion":4}},{"tosId":"GENERATIVE_LANGUAGE","serviceStatus":{"tos":{"id":"generative-language-api","tosId":"GENERATIVE_LANGUAGE"},"status":"ACCEPTED","acceptedVersion":3}}]}
+[debug] [2026-01-23T00:20:30.213Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.214Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.214Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.214Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.215Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.215Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.215Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.215Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.216Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.216Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.217Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.217Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:30.217Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com [none]
+[debug] [2026-01-23T00:20:30.217Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:30.221Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudbuild.googleapis.com [none]
+[debug] [2026-01-23T00:20:30.221Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudbuild.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:30.224Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/secretmanager.googleapis.com [none]
+[debug] [2026-01-23T00:20:30.224Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/secretmanager.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:30.227Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/run.googleapis.com [none]
+[debug] [2026-01-23T00:20:30.228Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/run.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:30.231Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/artifactregistry.googleapis.com [none]
+[debug] [2026-01-23T00:20:30.232Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/artifactregistry.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:30.234Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/iam.googleapis.com [none]
+[debug] [2026-01-23T00:20:30.235Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/iam.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:31.010Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/secretmanager.googleapis.com 200
+[debug] [2026-01-23T00:20:31.011Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/secretmanager.googleapis.com [omitted]
+[debug] [2026-01-23T00:20:31.040Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudbuild.googleapis.com 200
+[debug] [2026-01-23T00:20:31.041Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudbuild.googleapis.com [omitted]
+[debug] [2026-01-23T00:20:31.119Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com 200
+[debug] [2026-01-23T00:20:31.119Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com [omitted]
+[debug] [2026-01-23T00:20:31.120Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:31.120Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:31.120Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com:enable [none]
+[debug] [2026-01-23T00:20:31.120Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com:enable x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:31.143Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/artifactregistry.googleapis.com 200
+[debug] [2026-01-23T00:20:31.143Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/artifactregistry.googleapis.com [omitted]
+[debug] [2026-01-23T00:20:31.155Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/run.googleapis.com 200
+[debug] [2026-01-23T00:20:31.158Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/run.googleapis.com [omitted]
+[debug] [2026-01-23T00:20:31.174Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/iam.googleapis.com 200
+[debug] [2026-01-23T00:20:31.174Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/iam.googleapis.com [omitted]
+[debug] [2026-01-23T00:20:32.300Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com:enable 200
+[debug] [2026-01-23T00:20:32.301Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/developerconnect.googleapis.com:enable [omitted]
+[debug] [2026-01-23T00:20:42.318Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:42.318Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:42.319Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-01-23T00:20:42.319Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T00:20:42.319Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-23T00:20:43.013Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions 404
+[debug] [2026-01-23T00:20:43.013Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2026-01-23T00:20:43.018Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:43.018Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:43.019Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [none]
+[debug] [2026-01-23T00:20:43.019Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2026-01-23T00:20:43.516Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts 200
+[debug] [2026-01-23T00:20:43.518Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [omitted]
+[debug] [2026-01-23T00:20:43.525Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:43.526Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:43.526Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy [none]
+[debug] [2026-01-23T00:20:44.284Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy 200
+[debug] [2026-01-23T00:20:44.284Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy {"version":1,"etag":"BwZJAx+wimU=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-23T00:20:44.287Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:44.290Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:44.290Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy [none]
+[debug] [2026-01-23T00:20:44.290Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"policy":{"version":1,"etag":"BwZJAx+wimU=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2026-01-23T00:20:45.282Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy 200
+[debug] [2026-01-23T00:20:45.282Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"version":1,"etag":"BwZJAyDa1Hg=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-23T00:20:45.283Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:45.283Z] Checked if tokens are valid: true, expires at: 1769128647639
+[debug] [2026-01-23T00:20:45.286Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 
+[debug] [2026-01-23T00:20:46.030Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 200
+[debug] [2026-01-23T00:20:46.034Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations {"locations":[{"name":"projects/advertising-and-promotion211/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/advertising-and-promotion211/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/advertising-and-promotion211/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/advertising-and-promotion211/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/advertising-and-promotion211/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/advertising-and-promotion211/locations/us-east5","locationId":"us-east5","displayName":"Columbus"}]}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T12:41:37.947Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:37.949Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T12:41:37.951Z] Checked if tokens are valid: false, expires at: 1769128647639
+[debug] [2026-01-23T12:41:37.951Z] Checked if tokens are valid: false, expires at: 1769128647639
+[debug] [2026-01-23T12:41:37.952Z] > refreshing access token with scopes: []
+[debug] [2026-01-23T12:41:37.956Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-23T12:41:37.957Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T12:41:38.016Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:38.017Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T12:41:38.017Z] Checked if tokens are valid: false, expires at: 1769128647639
+[debug] [2026-01-23T12:41:38.018Z] Checked if tokens are valid: false, expires at: 1769128647639
+[debug] [2026-01-23T12:41:38.018Z] > refreshing access token with scopes: []
+[debug] [2026-01-23T12:41:38.019Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-23T12:41:38.019Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T12:41:38.079Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-23T12:41:38.079Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T12:41:38.107Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T12:41:38.136Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-23T12:41:38.136Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T12:41:38.161Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T12:41:38.366Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T12:41:38.368Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-23T12:41:38.381Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.381Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.383Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.383Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.383Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.384Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.408Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.408Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.409Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-23T12:41:38.409Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:38.412Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-23T12:41:38.412Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:38.415Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-23T12:41:38.415Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:38.418Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-23T12:41:38.418Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:38.502Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T12:41:38.502Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-23T12:41:38.503Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.503Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.504Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.504Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.506Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.506Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.520Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.520Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:38.521Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-23T12:41:38.521Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:38.525Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-23T12:41:38.525Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:38.528Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-23T12:41:38.528Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:38.531Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-23T12:41:38.532Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T12:41:39.026Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-23T12:41:39.026Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-23T12:41:39.167Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-23T12:41:39.168Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-23T12:41:39.253Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-23T12:41:39.253Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-23T12:41:39.272Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-23T12:41:39.272Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-23T12:41:39.308Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-23T12:41:39.309Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-23T12:41:39.369Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-23T12:41:39.369Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T12:41:39.385Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:39.385Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T12:41:39.385Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:39.385Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:39.386Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T12:41:39.407Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-23T12:41:39.407Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-23T12:41:39.414Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-23T12:41:39.414Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-23T12:41:39.561Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T12:41:39.562Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T12:41:39.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:39.572Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T12:41:39.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:39.593Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T12:41:39.593Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:39.593Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:39.594Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T12:41:39.601Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:39.602Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T12:41:39.602Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:39.602Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T12:41:39.602Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T12:41:39.768Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T12:41:39.768Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T12:41:39.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:39.781Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T12:41:39.845Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T12:41:39.846Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T12:41:39.849Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T12:41:39.852Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:14:19.154Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:14:19.154Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:14:19.155Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:14:19.155Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:14:19.156Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:14:19.793Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:14:19.793Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:14:19.803Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:14:19.805Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:14:19.805Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:14:19.805Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:14:19.805Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:14:20.401Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:14:20.402Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-23T13:14:20.404Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:14:20.404Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:14:20.405Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/-/backends 
+[debug] [2026-01-23T13:14:21.351Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/-/backends 200
+[debug] [2026-01-23T13:14:21.351Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/-/backends {}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:15:36.374Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:15:36.379Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:15:36.380Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:15:36.380Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:15:36.380Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:15:36.628Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:15:36.632Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:15:36.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:15:36.642Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:15:36.642Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:15:36.642Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:15:36.642Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:15:36.801Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:15:36.803Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[info] 
+=== Hosting Setup Actuation
+[debug] [2026-01-23T13:15:36.814Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2026-01-23T13:15:36.841Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2026-01-23T13:15:36.842Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"12.8.0","browserURL":"https://www.gstatic.com/firebasejs/12.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/12.8.0/firebase.tgz"},"live":{"version":"12.8","browserURL":"https://www.gstatic.com/firebasejs/live/12.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/12.8/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/12.8.0/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/12.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/12.8.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/12.8.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/12.8.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore/lite.js","firestore/pipelines":"https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore/pipelines.js","firestore/lite/pipelines":"https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore/lite/pipelines.js","installations":"https://www.gstatic.com/firebasejs/12.8.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/12.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/12.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/12.8.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/12.8.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/12.8.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js","data-connect":"https://www.gstatic.com/firebasejs/12.8.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote .next/index.html 
+[info] ✔  Wrote configuration info to firebase.json 
+[info] ✔  Wrote project information to .firebaserc 
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:17:54.453Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:54.454Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:17:54.456Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.456Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.457Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:54.457Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:17:54.457Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.458Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.459Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:17:54.508Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:17:54.731Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:17:54.732Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-23T13:17:54.746Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.746Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.747Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.748Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.748Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.749Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.771Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.771Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:54.772Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-23T13:17:54.772Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:54.775Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-23T13:17:54.775Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:54.777Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-23T13:17:54.778Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:54.780Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-23T13:17:54.780Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:55.165Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:17:55.166Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-23T13:17:55.167Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.167Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.167Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.167Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.171Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.177Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.193Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.194Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:55.194Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-23T13:17:55.194Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:55.197Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-23T13:17:55.197Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:55.199Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-23T13:17:55.199Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:55.202Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-23T13:17:55.202Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T13:17:55.438Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-23T13:17:55.438Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-23T13:17:55.530Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-23T13:17:55.531Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-23T13:17:55.626Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-23T13:17:55.626Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-23T13:17:55.648Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-23T13:17:55.648Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-23T13:17:55.654Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-23T13:17:55.654Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-23T13:17:56.305Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-23T13:17:56.305Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-23T13:17:56.329Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-23T13:17:56.329Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-23T13:17:56.334Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-23T13:17:56.335Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:17:56.345Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:56.349Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:17:56.350Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:56.350Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:56.350Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:17:56.527Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:17:56.528Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:17:56.533Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:56.541Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:17:56.570Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:56.571Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:17:56.571Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:56.571Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:56.574Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:17:56.582Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:56.582Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:17:56.583Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:56.583Z] Checked if tokens are valid: true, expires at: 1769175697137
+[debug] [2026-01-23T13:17:56.583Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-23T13:17:56.727Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:17:56.728Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:17:56.732Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:56.732Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T13:17:57.255Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-23T13:17:57.256Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-23T13:17:57.263Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T13:17:57.263Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
