@@ -4,40 +4,41 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
 import { MenuIcon, XIcon, MailIcon, PhoneIcon, MapPinIcon } from "../components/icons";
+import WorkCard from "../components/WorkCard"; // <-- استيراد المكون الجديد
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const works = [
     {
-      title: "واجهة كلادينج لمبنى تجاري",
+      title: "واجهة كلادينج ذهبية",
       category: "كلادينج",
-      imgSrc: "https://images.unsplash.com/photo-1599399432685-e5b15b8f2c20?fit=crop&w=800&h=600",
+      imgSrc: "https://images.unsplash.com/photo-1618062534522-b2132f7a01d5?fit=crop&w=800&q=80",
     },
     {
-      title: "حروف بارزة مضيئة لمطعم",
+      title: "لوحة حروف بارزة مضيئة",
       category: "لوحات إعلانية",
-      imgSrc: "https://images.unsplash.com/photo-1524068984912-f0f3a4a8a5b2?fit=crop&w=800&h=600",
+      imgSrc: "https://images.unsplash.com/photo-1600880292211-1de918fd5d41?fit=crop&w=800&q=80",
     },
     {
-      title: "تصميم ديكور داخلي لمتجر",
+      title: "تصميم داخلي لمكتب عصري",
       category: "أعمال الديكور",
-      imgSrc: "https://images.unsplash.com/photo-1556742044-59324e292046?fit=crop&w=800&h=600",
+      imgSrc: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?fit=crop&w=800&q=80",
     },
     {
-      title: "واجهة معمارية حديثة",
+      title: "واجهة مبنى بتصميم فريد",
       category: "كلادينج",
-      imgSrc: "https://images.unsplash.com/photo-1579208280908-c483726543b5?fit=crop&w=800&h=600",
+      imgSrc: "https://images.unsplash.com/photo-1533148612508-33c8a99a7593?fit=crop&w=800&q=80",
     },
      {
-      title: "لوحة إعلانية خارجية",
+      title: "لافتة نيون مبتكرة",
       category: "لوحات إعلانية",
-      imgSrc: "https://images.unsplash.com/photo-1558002118-a6d5c1a96c34?fit=crop&w=800&h=600",
+      imgSrc: "https://images.unsplash.com/photo-1581010392340-0d32b5d4f3b5?fit=crop&w=800&q=80",
     },
     {
-      title: "تركيب مظلات لمواقف سيارات",
+      title: "تركيب هياكل معدنية",
       category: "أعمال الحديد",
-      imgSrc: "https://images.unsplash.com/photo-1517036319989-bf4a45999359?fit=crop&w=800&h=600",
+      imgSrc: "https://images.unsplash.com/photo-1504917595217-d4d54774f57c?fit=crop&w=800&q=80",
     },
   ];
 
@@ -197,14 +198,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
               {works.map((work, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-2xl border border-white/10">
-                  <Image src={work.imgSrc} alt={work.title} width={800} height={600} className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                  <div className="absolute bottom-0 left-0 p-6">
-                    <span className="text-sm bg-yellow-400/10 text-yellow-300 px-3 py-1 rounded-full">{work.category}</span>
-                    <h3 className="text-2xl font-bold text-white mt-3">{work.title}</h3>
-                  </div>
-                </div>
+                <WorkCard key={index} title={work.title} category={work.category} imgSrc={work.imgSrc} />
               ))}
             </div>
           </div>
