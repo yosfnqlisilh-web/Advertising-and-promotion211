@@ -4,23 +4,42 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
 import { MenuIcon, XIcon, MailIcon, PhoneIcon, MapPinIcon } from "../components/icons";
-import OurWorkCarousel from "../components/OurWorkCarousel";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const claddingSlides = [
-    { src: "https://images.unsplash.com/photo-1599399432685-e5b15b8f2c20?fit=crop&w=1200&h=600", alt: "مشروع واجهة كلادينج حديثة", title: "واجهة حديثة" },
-    { src: "https://images.unsplash.com/photo-1579208280908-c483726543b5?fit=crop&w=1200&h=600", alt: "واجهة محل تجاري أنيقة", title: "واجهة تجارية" },
-    { src: "https://images.unsplash.com/photo-1618062534522-b2132f7a01d5?fit=crop&w=1200&h=600", alt: "تفاصيل ديكور معدني", title: "ديكور معدني" },
+  const works = [
+    {
+      title: "واجهة كلادينج لمبنى تجاري",
+      category: "كلادينج",
+      imgSrc: "https://images.unsplash.com/photo-1599399432685-e5b15b8f2c20?fit=crop&w=800&h=600",
+    },
+    {
+      title: "حروف بارزة مضيئة لمطعم",
+      category: "لوحات إعلانية",
+      imgSrc: "https://images.unsplash.com/photo-1524068984912-f0f3a4a8a5b2?fit=crop&w=800&h=600",
+    },
+    {
+      title: "تصميم ديكور داخلي لمتجر",
+      category: "أعمال الديكور",
+      imgSrc: "https://images.unsplash.com/photo-1556742044-59324e292046?fit=crop&w=800&h=600",
+    },
+    {
+      title: "واجهة معمارية حديثة",
+      category: "كلادينج",
+      imgSrc: "https://images.unsplash.com/photo-1579208280908-c483726543b5?fit=crop&w=800&h=600",
+    },
+     {
+      title: "لوحة إعلانية خارجية",
+      category: "لوحات إعلانية",
+      imgSrc: "https://images.unsplash.com/photo-1558002118-a6d5c1a96c34?fit=crop&w=800&h=600",
+    },
+    {
+      title: "تركيب مظلات لمواقف سيارات",
+      category: "أعمال الحديد",
+      imgSrc: "https://images.unsplash.com/photo-1517036319989-bf4a45999359?fit=crop&w=800&h=600",
+    },
   ];
-
-  const signageSlides = [
-    { src: "https://images.unsplash.com/photo-1524068984912-f0f3a4a8a5b2?fit=crop&w=1200&h=600", alt: "لوحة حروف بارزة مضيئة", title: "حروف بارزة" },
-    { src: "https://images.unsplash.com/photo-1558002118-a6d5c1a96c34?fit=crop&w=1200&h=600", alt: "لوحة إعلانية مضيئة", title: "لوحات مضيئة" },
-    { src: "https://images.unsplash.com/photo-1517036319989-bf4a15999359?fit=crop&w=1200&h=600", alt: "تركيب مظلات وسواتر", title: "مظلات وسواتر" },
-  ];
-
 
   return (
     <div className="flex flex-col min-h-screen bg-[#050505] text-white font-sans">
@@ -106,40 +125,40 @@ export default function Home() {
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-5xl sm:text-6xl font-bold tracking-tight bg-gold-gradient bg-clip-text text-transparent">خدماتنا المتكاملة</h2>
               <p className="mt-6 text-xl text-gray-400">
-                من الفكرة إلى التنفيذ، نقدم حلولاً إبداعية ومتكاملة لتحديث واجهات المباني التجارية والسكنية وتصميم وتنفيذ كافة أنواع اللوحات الإعلانية التي تبرز علامتك التجارية.
+                من الفكرة إلى التنفيذ، نقدم حلولاً إبداعية ومتكاملة لتحديث واجهات المباني وتصميم كافة أنواع اللوحات الإعلانية التي تبرز علامتك التجارية.
               </p>
             </div>
             <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
               <div className="bg-[#181818] rounded-2xl p-10 transform hover:-translate-y-4 transition-transform duration-300 border border-white/10 shadow-2xl hover:shadow-gold/20">
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gold-gradient mb-8">
-                  <Image src="/cladding.svg" alt="أيقونة تكسية واجهات" width="40" height="40" className="invert"/>
+                  <Image src="/cladding.svg" alt="أيقونة تكسية واجهات" width={40} height={40} className="invert"/>
                 </div>
                 <h3 className="mt-6 text-3xl font-bold text-white">تكسية الواجهات</h3>
                 <p className="mt-5 text-lg text-gray-400">
-                  تنفيذ وتلبيس واجهات الفلل، المحلات، والمباني باستخدام الكلادينج، الجبس بورد، والأسمنت بورد بتصاميم عصرية.
+                  تنفيذ وتلبيس واجهات المباني باستخدام الكلادينج، الجبس بورد، والأسمنت بورد بتصاميم عصرية.
                 </p>
               </div>
               <div className="bg-[#181818] rounded-2xl p-10 transform hover:-translate-y-4 transition-transform duration-300 border border-white/10 shadow-2xl hover:shadow-gold/20">
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gold-gradient mb-8">
-                  <Image src="/signage.svg" alt="أيقونة اللوحات الإعلانية" width="40" height="40" className="invert" />
+                  <Image src="/signage.svg" alt="أيقونة اللوحات الإعلانية" width={40} height={40} className="invert" />
                 </div>
-                <h3 className="mt-6 text-3xl font-bold text-white">اللوحات الإعلانية المتكاملة</h3>
+                <h3 className="mt-6 text-3xl font-bold text-white">اللوحات الإعلانية</h3>
                 <p className="mt-5 text-lg text-gray-400">
                   تصميم وتصنيع كافة أنواع لوحات المحلات، من الحروف البارزة إلى الشاشات الرقمية واللافتات الإعلانية.
                 </p>
               </div>
               <div className="bg-[#181818] rounded-2xl p-10 transform hover:-translate-y-4 transition-transform duration-300 border border-white/10 shadow-2xl hover:shadow-gold/20">
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gold-gradient mb-8">
-                   <Image src="/structures.svg" alt="أيقونة هياكل دعائية" width="40" height="40" className="invert" />
+                   <Image src="/structures.svg" alt="أيقونة هياكل دعائية" width={40} height={40} className="invert" />
                 </div>
-                <h3 className="mt-6 text-3xl font-bold text-white">الأسوار والهياكل الدعائية</h3>
+                <h3 className="mt-6 text-3xl font-bold text-white">الأسوار والهياكل</h3>
                 <p className="mt-5 text-lg text-gray-400">
                   بناء أسوار دعائية بهياكل معدنية متنوعة، مصممة خصيصًا لتتناسب مع متطلبات المشروع وميزانيته.
                 </p>
               </div>
               <div className="bg-[#181818] rounded-2xl p-10 transform hover:-translate-y-4 transition-transform duration-300 border border-white/10 shadow-2xl hover:shadow-gold/20">
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gold-gradient mb-8">
-                   <Image src="/printing.svg" alt="أيقونة الطباعة الرقمية" width="40" height="40" className="invert" />
+                   <Image src="/printing.svg" alt="أيقونة الطباعة الرقمية" width={40} height={40} className="invert" />
                 </div>
                 <h3 className="mt-6 text-3xl font-bold text-white">الطباعة الرقمية</h3>
                 <p className="mt-5 text-lg text-gray-400">
@@ -148,11 +167,20 @@ export default function Home() {
               </div>
               <div className="bg-[#181818] rounded-2xl p-10 transform hover:-translate-y-4 transition-transform duration-300 border border-white/10 shadow-2xl hover:shadow-gold/20">
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gold-gradient mb-8">
-                   <Image src="/metalwork.svg" alt="أيقونة أعمال الحديد" width="40" height="40" className="invert" />
+                   <Image src="/metalwork.svg" alt="أيقونة أعمال الحديد" width={40} height={40} className="invert" />
                 </div>
-                <h3 className="mt-6 text-3xl font-bold text-white">أعمال الحديد والمقاولات</h3>
+                <h3 className="mt-6 text-3xl font-bold text-white">أعمال الحديد</h3>
                 <p className="mt-5 text-lg text-gray-400">
-                  تصنيع وتركيب المظلات والسواتر، الهياكل المعدنية، وأعمال الحدادة المساندة لمشاريع الدعاية والإعلان.
+                  تصنيع وتركيب المظلات والسواتر، الهياكل المعدنية، وأعمال الحدادة المساندة لمشاريع الدعاية.
+                </p>
+              </div>
+              <div className="bg-[#181818] rounded-2xl p-10 transform hover:-translate-y-4 transition-transform duration-300 border border-white/10 shadow-2xl hover:shadow-gold/20">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gold-gradient mb-8">
+                   <Image src="/decor.svg" alt="أيقونة أعمال الديكور" width={40} height={40} className="invert" />
+                </div>
+                <h3 className="mt-6 text-3xl font-bold text-white">أعمال الديكور</h3>
+                <p className="mt-5 text-lg text-gray-400">
+                  تنفيذ الديكورات الداخلية والخارجية للمحلات التجارية والمكاتب بأحدث التصاميم العصرية.
                 </p>
               </div>
             </div>
@@ -167,26 +195,17 @@ export default function Home() {
                 نفخر بتقديم أعمال استثنائية تعكس شغفنا بالجودة والابتكار. تصفح بعض من مشاريعنا التي أنجزناها في الرياض.
               </p>
             </div>
-
-            <div className="mt-20 space-y-16">
-                <div>
-                    <h3 className="text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">مشاريع الواجهات والكلادينج</h3>
-                    <OurWorkCarousel slides={claddingSlides} options={{ loop: true, align: 'start', slidesToScroll: 1, duration: 25 }} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+              {works.map((work, index) => (
+                <div key={index} className="group relative overflow-hidden rounded-2xl border border-white/10">
+                  <Image src={work.imgSrc} alt={work.title} width={800} height={600} className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <span className="text-sm bg-yellow-400/10 text-yellow-300 px-3 py-1 rounded-full">{work.category}</span>
+                    <h3 className="text-2xl font-bold text-white mt-3">{work.title}</h3>
+                  </div>
                 </div>
-                <div>
-                    <h3 className="text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">اللوحات الإعلانية وأعمال الحديد</h3>
-                    <OurWorkCarousel slides={signageSlides} options={{ loop: true, align: 'start', slidesToScroll: 1, duration: 25, direction: 'rtl' }} />
-                </div>
-            </div>
-
-            <div className="mt-20 text-center">
-              <Link
-                href="#"
-                className="inline-flex h-12 items-center justify-center rounded-lg border border-yellow-400/50 bg-yellow-400/10 px-10 text-lg font-semibold text-yellow-400 backdrop-blur-md transition-all hover:bg-yellow-400/20 focus:outline-none focus:ring-2 focus:ring-yellow-400/50"
-                prefetch={false}
-              >
-                شاهد كل أعمالنا
-              </Link>
+              ))}
             </div>
           </div>
         </section>
