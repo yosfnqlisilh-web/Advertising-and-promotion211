@@ -2,45 +2,34 @@
 
 ## Overview
 
-A modern, responsive website for "فن الإعلان", a contracting company specializing in advertising and decoration works in Riyadh. The site aims to showcase their services, portfolio, and provide easy and direct contact methods for potential clients.
+A modern, responsive, and animated website for "فن الإعلان", a contracting company in Riyadh. The site showcases their services, portfolio, client testimonials, and FAQs, providing a comprehensive and trustworthy online presence.
 
 ## Implemented Features & Design
 
 *   **Framework:** Next.js with App Router.
-*   **Styling:** Tailwind CSS with a dark gray theme (`bg-gray-900`, `bg-gray-800`).
-*   **Header & Navigation:**
-    *   Sticky header with a blurred background effect.
-    *   Interactive "Contact Us" button opening a modal.
-    *   Fully responsive mobile menu.
-*   **Hero Section:**
-    *   Full-screen with a fixed background image.
-    *   Animated gradient headline.
-*   **Services Section:**
-    *   A grid of `ServiceCard` components.
-    *   The "Maintenance and Restoration" card's gallery was updated with an additional image.
-*   **Our Work Section:**
-    *   A grid of `WorkCard` components showcasing portfolio projects.
-    *   **Portfolio Item Update:** The card for "هيكل حديدي لسور إعلاني" was updated to "لافتة أرض فضاء". The description was refined to be more concise and marketable by removing the detailed list of materials.
-*   **Contact Section:**
-    *   Server Action form sending emails to `yosfnqlisilh@gmail.com` via Resend.
-    *   Displayed contact email corrected to `yosfnqlisilh@gmail.com`.
-    *   Includes a map, clickable phone number, and address.
-*   **Footer:**
-    *   Displays official, centered SVG logos for Facebook, Instagram, and LinkedIn.
-*   **Contact Modal:**
-    *   A custom modal (`ContactModal.tsx`) with direct **WhatsApp** and **Phone Call** buttons.
+*   **Styling:** Tailwind CSS with a dark theme and gold accents.
+*   **Header & Navigation:** Sticky header with responsive mobile menu.
+*   **Hero Section:** Full-screen with a fixed background image and animated gradient headline.
+*   **Core Sections:** Services, Our Work, About Us, FAQ, and Contact sections.
+*   **Authentic Testimonials Section:**
+    *   Displays 5 curated, realistic client testimonials in a static grid.
+    *   **No user photos:** Replaced with social media platform icons (Google, Instagram, etc.) to enhance authenticity without compromising privacy.
+    *   Uses a `TestimonialCard` component designed to show the platform icon alongside the client's name and title.
+*   **Detailed FAQ Section:**
+    *   Provides clear, specific answers to key customer questions.
+    *   **Warranty:** Details specific warranty periods (2 years for lighting, 1 year for outdoor printing, 15 years for cladding colors from the manufacturer).
+    *   **Timeline:** Clarifies project duration (2 to 8 days after design approval).
+*   **Contact Section:** Server Action form, embedded map, and clickable contact info.
+*   **Scroll Animations:** Fade-in-on-scroll effects for all major sections.
+*   **Contact Modal:** A custom modal with direct WhatsApp and Phone Call buttons.
 
 ## Latest Change Request & Fixes
 
-*   **Request:**
-    1.  Refine the description for the "لافتة أرض فضاء" (Vacant Land Sign) portfolio item by removing a specific sentence about the materials.
-    2.  (Previously) Update the title and initial description for the same portfolio item.
-    3.  (Previously) Add a specific image to the "Maintenance and Restoration" service card.
-    4.  (Previously) Fix a critical bug where content disappeared and social media icons were incorrect.
-    5.  (Previously) Correct the displayed contact email.
+*   **Request:** Make testimonials more realistic and less exaggerated. Replace user photos with platform icons. Provide very specific and clear answers in the FAQ section.
+
 *   **Execution & Fixes:**
-    1.  **Text Refinement:** The description for the "لافتة أرض فضاء" item in the `works` array in `src/app/page.tsx` was shortened as requested.
-    2.  **Portfolio Update:** The title and description for the item were changed.
-    3.  **Image Addition:** An image was added to the restoration service card.
-    4.  **Code & UI Restoration:** The main page was rebuilt, and UI issues were fixed.
-    5.  **Email Correction:** The contact email was updated.
+    1.  **Component Update:** `TestimonialCard.tsx` was modified to accept and display a `platform` prop (e.g., 'google', 'instagram') which renders the corresponding social media icon, replacing the user image.
+    2.  **Content Overhaul (Testimonials):** The five testimonials were completely rewritten to be more grounded and believable. The `imageSrc` prop was removed and replaced with the new `platform` prop.
+    3.  **Content Overhaul (FAQ):** The answers for the warranty and project timeline questions were updated with the specific, clear information provided by the user.
+    4.  **Layout Adjustment:** The grid for testimonials was adjusted for better visual balance (`lg:px-48` on the second row).
+    5.  **Icon Library:** Added `WhatsappIcon` to the icons file.

@@ -1,0 +1,23 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 80%; /* Show 80% of a slide */
+  min-width: 0;
+  padding-left: 1rem; /* Gap between slides */
+}
+
+/* On larger screens, we'll use Grid, so we reset these styles */
+@media (min-width: 768px) {
+  .embla__container {
+    display: contents; /* This will make the carousel styles not apply */
+  }
+  .embla__slide {
+    flex: initial;
+    min-width: initial;
+    padding-left: 0;
+  }
+}

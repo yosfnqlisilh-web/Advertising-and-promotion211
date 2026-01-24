@@ -1,156 +1,899 @@
-[debug] [2026-01-23T21:40:10.277Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:10.283Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:10.284Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-23T23:52:41.661Z] ----------------------------------------------------------------------
+[debug] [2026-01-23T23:52:41.664Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase apphosting:backends:create
+[debug] [2026-01-23T23:52:41.664Z] CLI Version:   15.4.0
+[debug] [2026-01-23T23:52:41.665Z] Platform:      linux
+[debug] [2026-01-23T23:52:41.665Z] Node Version:  v20.18.1
+[debug] [2026-01-23T23:52:41.665Z] Time:          Fri Jan 23 2026 23:52:41 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-23T23:52:41.665Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-23T23:52:41.668Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-01-23T23:52:42.335Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-23T23:52:42.335Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-23T23:52:42.335Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-23T23:52:42.357Z] Checked if tokens are valid: false, expires at: 1769205965492
+[debug] [2026-01-23T23:52:42.357Z] Checked if tokens are valid: false, expires at: 1769205965492
+[debug] [2026-01-23T23:52:42.358Z] > refreshing access token with scopes: []
+[debug] [2026-01-23T23:52:42.360Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-23T23:52:42.360Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T23:52:42.441Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-23T23:52:42.443Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-23T23:52:42.467Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 [none]
+[debug] [2026-01-23T23:52:42.627Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-01-23T23:52:42.630Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-01-23T23:52:43.905Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 200
+[debug] [2026-01-23T23:52:43.905Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 {"workspaceId":"advertising211-62292829","name":"Advertising211","workspaceRedirectUrl":"firebase-advertising211-1769034530371.cluster-l6vkdperq5ebaqo3qy4ksvoqom.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2026-01-23T21:39:16.626421Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-229017480698710671@monospace-per-ws-sa-2.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"yosfnqlisilh@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_nextjs.svg","templateArgs":"{\"language\":\"ts\",\"srcDir\":true,\"eslint\":true,\"app\":true,\"tailwind\":true,\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/nextjs","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtYWR2ZXJ0aXNpbmcyMTEtMTc2OTAzNDUzMDM3MS5jbHVzdGVyLWw2dmtkcGVycTVlYmFxbzNxeTRrc3ZvcW9tLmNsb3Vkd29ya3N0YXRpb25zLmRldiIsImlhdCI6MTc2OTIxMjM2MywiZXhwIjoxNzY5Mjk4NzYzfQ.KOPBr2g5GBu-u6mdlu-T5u_xYnZ_dJ46KdwYkramrpYjiTocxkdQnX8LHHjdYuT-HOZ7ZnGP2kRiU-d6fQwYVrbstpjCN80VL-ws3akP4SLUwXDyBDt2SYgGpt-iqCoynQKVxfPwiJiBSQsEQxX7xETnZG5mdCKHhye0gPSVmdkPov3x0f86gu6g5eRREwOHBEBb3miTpiZqzdM8DYoD2C4pTO1Zwr8V1tzwSpEoW3CHiLazVeV_5jdWQnsxC-GSwLznY4VtLcxfLpftjVVTOKa-tc-5WcQ81oavncFyjdho-qiE6OFcVh6slrwDPUrBWDzD-jQjVjTiRQICICfiLw","firebaseProjectId":"advertising-and-promotion211"}
+[debug] [2026-01-23T23:52:43.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-23T23:52:43.912Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-23T23:52:43.917Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:43.917Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:43.918Z] >>> [apiv2][query] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus [none]
+[debug] [2026-01-23T23:52:44.225Z] <<< [apiv2][status] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus 200
+[debug] [2026-01-23T23:52:44.225Z] <<< [apiv2][body] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus {"overallStatus":"ACCEPTED","uTosStatus":{"tos":{"id":"firebase","tosId":"FIREBASE_UNIVERSAL"},"status":"ACCEPTED","acceptedVersion":7},"childTosStatus":[{"tos":{"id":"cloud","tosId":"CLOUD_PLATFORM"},"status":"ACCEPTED","acceptedVersion":39},{"tos":{"id":"firebase_b2b","tosId":"FIREBASE_B2B"},"status":"ACCEPTED","acceptedVersion":1},{"tos":{"id":"universal","tosId":"GOOGLE_APIS"},"status":"ACCEPTED","acceptedVersion":6}],"termsUrl":"https://firebase.google.com/terms","perServiceStatus":[{"tosId":"APP_CHECK","serviceStatus":{"tos":{"id":"app_check","tosId":"APP_CHECK"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"APP_HOSTING_TOS","serviceStatus":{"tos":{"id":"app_hosting","tosId":"APP_HOSTING_TOS"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"FIREBASE_DATA_CONNECT","serviceStatus":{"tos":{"id":"data_connect","tosId":"FIREBASE_DATA_CONNECT"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"CORE_APPS","serviceStatus":{"tos":{"id":"core_apps","tosId":"CORE_APPS"},"status":"ACCEPTED","acceptedVersion":1}},{"tosId":"VERTEX_AI_IN_FIREBASE","serviceStatus":{"tos":{"id":"vertex_ai_in_firebase","tosId":"VERTEX_AI_IN_FIREBASE"},"status":"ACCEPTED","acceptedVersion":2}},{"tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION","serviceStatus":{"tos":{"id":"firebase_crashlytics_app_distribution","tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION"},"status":"ACCEPTED","acceptedVersion":4}},{"tosId":"GENERATIVE_LANGUAGE","serviceStatus":{"tos":{"id":"generative-language-api","tosId":"GENERATIVE_LANGUAGE"},"status":"ACCEPTED","acceptedVersion":3}}]}
+[debug] [2026-01-23T23:52:44.234Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:44.239Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:44.240Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-01-23T23:52:44.240Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-23T23:52:44.240Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-23T23:52:44.887Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-01-23T23:52:44.887Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-23T23:52:44.888Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:44.888Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:44.889Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [none]
+[debug] [2026-01-23T23:52:44.889Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2026-01-23T23:52:45.714Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts 409
+[debug] [2026-01-23T23:52:45.714Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [omitted]
+[debug] [2026-01-23T23:52:45.717Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:45.717Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:45.717Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy [none]
+[debug] [2026-01-23T23:52:46.513Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy 200
+[debug] [2026-01-23T23:52:46.515Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy {"version":1,"etag":"BwZJFKcNFSw=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-23T23:52:46.519Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:46.519Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:46.519Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy [none]
+[debug] [2026-01-23T23:52:46.519Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"policy":{"version":1,"etag":"BwZJFKcNFSw=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2026-01-23T23:52:47.619Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy 200
+[debug] [2026-01-23T23:52:47.624Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"version":1,"etag":"BwZJFtqzE/Y=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-23T23:52:47.625Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:47.625Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-23T23:52:47.628Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 
+[debug] [2026-01-23T23:52:48.378Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 200
+[debug] [2026-01-23T23:52:48.382Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations {"locations":[{"name":"projects/advertising-and-promotion211/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/advertising-and-promotion211/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/advertising-and-promotion211/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/advertising-and-promotion211/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/advertising-and-promotion211/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/advertising-and-promotion211/locations/us-east5","locationId":"us-east5","displayName":"Columbus"}]}
+[debug] [2026-01-24T00:16:08.331Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:08.338Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:08.339Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:10.288Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:10.289Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:10.289Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:08.360Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:08.360Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:08.361Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:10.292Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:10.292Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:10.293Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:08.366Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:08.366Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:08.367Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:10.294Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:10.295Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:10.295Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:08.371Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:08.371Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:08.372Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:10.296Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:10.297Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
-[debug] [2026-01-23T21:40:10.298Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.299Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.299Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:10.299Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
-[debug] [2026-01-23T21:40:10.299Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.299Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.301Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
-[debug] [2026-01-23T21:40:10.368Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
-[debug] [2026-01-23T21:40:10.576Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
-[debug] [2026-01-23T21:40:10.580Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
-[debug] [2026-01-23T21:40:10.581Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:10.581Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:10.582Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
-[debug] [2026-01-23T21:40:10.598Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.598Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.598Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.599Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.622Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.622Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:10.622Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
-[debug] [2026-01-23T21:40:10.623Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
-[debug] [2026-01-23T21:40:10.626Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
-[debug] [2026-01-23T21:40:10.626Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
-[debug] [2026-01-23T21:40:10.629Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
-[debug] [2026-01-23T21:40:10.629Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
-[debug] [2026-01-23T21:40:11.014Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
-[debug] [2026-01-23T21:40:11.014Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
-[debug] [2026-01-23T21:40:11.016Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.016Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.016Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
-[debug] [2026-01-23T21:40:11.019Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.019Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.021Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.021Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.037Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.037Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.038Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
-[debug] [2026-01-23T21:40:11.038Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
-[debug] [2026-01-23T21:40:11.039Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
-[debug] [2026-01-23T21:40:11.039Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
-[debug] [2026-01-23T21:40:11.042Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
-[debug] [2026-01-23T21:40:11.042Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
-[debug] [2026-01-23T21:40:11.048Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
-[debug] [2026-01-23T21:40:11.048Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
-[debug] [2026-01-23T21:40:11.356Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
-[debug] [2026-01-23T21:40:11.356Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
-[debug] [2026-01-23T21:40:11.393Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
-[debug] [2026-01-23T21:40:11.393Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
-[debug] [2026-01-23T21:40:11.457Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
-[debug] [2026-01-23T21:40:11.458Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
-[debug] [2026-01-23T21:40:11.461Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.461Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.461Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:08.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:08.376Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:08.378Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.378Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:08.378Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:08.378Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.379Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.380Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:16:08.476Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:16:08.722Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:16:08.723Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:16:08.727Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:08.728Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:08.728Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:08.756Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.756Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.758Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.758Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.785Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.785Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:08.785Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:16:08.786Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:16:08.790Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-24T00:16:08.790Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:16:08.794Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:16:08.794Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:16:09.130Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:16:09.134Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:16:09.136Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.136Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.136Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.142Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.142Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.143Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.143Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.159Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.159Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.159Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:16:09.160Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:16:09.163Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-24T00:16:09.163Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:16:09.168Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:16:09.168Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:16:09.568Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:16:09.570Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:16:09.668Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:16:09.670Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:16:09.698Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-24T00:16:09.700Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-24T00:16:09.708Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.708Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.708Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.462Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.463Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.463Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.716Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.716Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.716Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.467Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.467Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.467Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.721Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.721Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.721Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:11.470Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
-[debug] [2026-01-23T21:40:11.470Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.470Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.471Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
-[debug] [2026-01-23T21:40:11.644Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
-[debug] [2026-01-23T21:40:11.644Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
-[debug] [2026-01-23T21:40:11.647Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.648Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.648Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
-[debug] [2026-01-23T21:40:11.651Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.651Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.651Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.725Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:09.725Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:09.725Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.725Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.725Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:16:09.898Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:16:09.899Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:16:09.905Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.905Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.906Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.912Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.912Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.913Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.654Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:11.654Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
-[debug] [2026-01-23T21:40:11.677Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.678Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.678Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.916Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:09.916Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:09.941Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.942Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.943Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.679Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.679Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.679Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.958Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.958Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.958Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.682Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.682Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.682Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.962Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.962Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.963Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.683Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:11.688Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
-[debug] [2026-01-23T21:40:11.689Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.689Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.689Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
-[debug] [2026-01-23T21:40:11.693Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.694Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.694Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.965Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:09.966Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:09.966Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.966Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.966Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:16:09.970Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.970Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.970Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.695Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.695Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.695Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.976Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.976Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.976Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.696Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.696Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.696Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.980Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:09.981Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:09.981Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.696Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:11.696Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
-[debug] [2026-01-23T21:40:11.697Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.697Z] Checked if tokens are valid: true, expires at: 1769205965492
-[debug] [2026-01-23T21:40:11.697Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
-[debug] [2026-01-23T21:40:11.742Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
-[debug] [2026-01-23T21:40:11.742Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
-[debug] [2026-01-23T21:40:11.835Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
-[debug] [2026-01-23T21:40:11.835Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
-[debug] [2026-01-23T21:40:11.838Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.838Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.840Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
-[debug] [2026-01-23T21:40:11.841Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.841Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.842Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:09.983Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:09.984Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:09.984Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.984Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:16:09.984Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:16:10.008Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:16:10.013Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:16:10.198Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:16:10.199Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:16:10.208Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:10.209Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:10.209Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:10.211Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:10.211Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:10.211Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.847Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:11.847Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
-[debug] [2026-01-23T21:40:11.864Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
-[debug] [2026-01-23T21:40:11.864Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
-[debug] [2026-01-23T21:40:11.954Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
-[debug] [2026-01-23T21:40:11.954Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
-[debug] [2026-01-23T21:40:11.956Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.958Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.959Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
-[debug] [2026-01-23T21:40:11.962Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
-[debug] [2026-01-23T21:40:11.962Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
-[debug] [2026-01-23T21:40:11.962Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:10.214Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:10.215Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:10.234Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:16:10.237Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:16:10.246Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:10.246Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:10.246Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:16:10.250Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:16:10.250Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:16:10.250Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
-[debug] [2026-01-23T21:40:11.965Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2026-01-23T21:40:11.966Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:10.254Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:16:10.255Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:16:10.282Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-24T00:16:10.282Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-24T00:16:10.293Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:16:10.294Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:17:32.897Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:32.902Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:32.903Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:32.909Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:32.913Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:32.914Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:32.921Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:32.923Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:32.924Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:32.927Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:32.928Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:32.928Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:32.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:32.930Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:32.932Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:32.932Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:32.932Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:32.932Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:32.932Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:32.932Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:32.934Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:17:32.989Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:17:33.182Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:17:33.182Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:17:33.183Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:33.184Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:33.184Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:17:33.197Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.197Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.199Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.199Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.226Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.228Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.228Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:17:33.229Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:17:33.232Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-24T00:17:33.232Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:17:33.235Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:17:33.236Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:17:33.314Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:17:33.315Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:17:33.319Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:33.319Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:33.319Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:17:33.322Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.322Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.323Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.323Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.340Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.341Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:33.341Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:17:33.341Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:17:33.344Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-24T00:17:33.344Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:17:33.347Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:17:33.348Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:17:33.574Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:17:33.574Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:17:33.974Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:17:33.974Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:17:34.057Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:17:34.058Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:17:34.079Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-24T00:17:34.079Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-24T00:17:34.083Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.084Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.084Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.088Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.088Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.088Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.090Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.090Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.090Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.091Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:34.092Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:34.092Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:34.092Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:34.092Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:17:34.159Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:17:34.159Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:17:34.171Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-24T00:17:34.172Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-24T00:17:34.264Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:17:34.264Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:17:34.267Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.267Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.267Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:17:34.270Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.270Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.270Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.275Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:34.275Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:34.300Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.300Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.304Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.307Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.307Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.307Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.310Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.310Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.310Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.311Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:34.311Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:34.311Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:34.311Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:34.313Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:17:34.317Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.318Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.318Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.319Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.319Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.319Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.319Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.319Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.319Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.320Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:34.320Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:34.320Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:34.320Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:34.321Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:17:34.462Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:17:34.462Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:17:34.465Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.465Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.465Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:17:34.466Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.466Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.466Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.469Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:34.470Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:34.922Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:17:34.923Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:17:34.924Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.924Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.924Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:17:34.925Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:34.926Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:34.926Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:34.927Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:34.927Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:38.598Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.598Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.598Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:38.604Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.604Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.610Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:38.618Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.618Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.618Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:38.628Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.628Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.629Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:38.633Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.633Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.633Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:38.639Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.641Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.641Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:38.647Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:38.647Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:38.647Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:38.648Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:38.648Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:38.648Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:38.654Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:38.655Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:17:38.655Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:17:38.658Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:17:38.946Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:17:38.950Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:17:38.955Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.968Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.969Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:17:38.971Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:38.977Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:38.978Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:38.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:38.984Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:17:39.296Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:17:39.296Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:17:39.296Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:39.297Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:39.297Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:17:39.305Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:17:39.305Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:17:39.305Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:17:39.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:17:39.306Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:18:59.196Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:18:59.209Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:18:59.210Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:18:59.215Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:18:59.215Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:18:59.218Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:18:59.221Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:18:59.221Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:18:59.221Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:18:59.223Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:18:59.223Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:18:59.223Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:18:59.224Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:18:59.225Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:18:59.226Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.227Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.227Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:18:59.227Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:18:59.227Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.227Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.229Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:18:59.279Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:18:59.468Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:18:59.471Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:18:59.472Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:18:59.472Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:18:59.473Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:18:59.485Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.485Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.486Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.486Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.511Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.511Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.512Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:18:59.512Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:18:59.515Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-24T00:18:59.515Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:18:59.517Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:18:59.518Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:18:59.611Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:18:59.619Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:18:59.620Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:18:59.620Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:18:59.621Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:18:59.625Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.625Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.626Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.626Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.636Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.637Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:18:59.637Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:18:59.637Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:18:59.640Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-24T00:18:59.640Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:18:59.642Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:18:59.642Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:18:59.864Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:18:59.864Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:18:59.896Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:18:59.899Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:18:59.992Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-24T00:18:59.992Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-24T00:19:00.310Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:19:00.310Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:19:00.366Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-24T00:19:00.366Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-24T00:19:00.367Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:00.367Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:00.367Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:00.375Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:00.375Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:00.375Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:00.376Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:00.378Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:00.378Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:00.379Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:19:00.379Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:19:00.380Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:19:00.380Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:19:00.380Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:19:00.520Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:19:00.521Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:19:00.982Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:19:00.986Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:19:00.987Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:00.989Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:00.989Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:19:01.001Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.001Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.001Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.004Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:19:01.004Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:19:01.025Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.028Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.028Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.033Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.034Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.034Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.037Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.037Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.038Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.038Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:19:01.038Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:19:01.039Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:19:01.039Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:19:01.039Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:19:01.044Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.044Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.044Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.045Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.045Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.045Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.046Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.046Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.046Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:19:01.047Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:19:01.047Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:19:01.047Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:19:01.047Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:19:01.219Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:19:01.219Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:19:01.220Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.220Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.220Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:19:01.221Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.221Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.222Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.231Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:19:01.231Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:19:01.292Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:19:01.293Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:19:01.293Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.294Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.294Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:19:01.295Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:19:01.295Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:19:01.295Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:19:01.296Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:19:01.296Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:21:58.980Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:21:58.987Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:21:58.988Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:21:58.995Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:21:58.996Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:21:58.996Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:21:58.998Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:21:58.999Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:21:58.999Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:21:59.001Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:21:59.001Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:21:59.001Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:21:59.003Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:21:59.003Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:21:59.005Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.005Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:21:59.005Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:21:59.006Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.006Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.007Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:21:59.058Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:21:59.247Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:21:59.250Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:21:59.251Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:21:59.253Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:21:59.253Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:21:59.266Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.266Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.267Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.267Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.290Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.290Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.291Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:21:59.291Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:21:59.294Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-24T00:21:59.294Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:21:59.298Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:21:59.298Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:21:59.639Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-24T00:21:59.639Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-24T00:21:59.727Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:21:59.730Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:21:59.730Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:21:59.730Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:21:59.731Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:21:59.734Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.734Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.781Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.781Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:21:59.783Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [none]
+[debug] [2026-01-24T00:21:59.783Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:21:59.784Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-24T00:21:59.784Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:22:00.021Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:22:00.021Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:22:00.147Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:22:00.147Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:22:00.156Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com 200
+[debug] [2026-01-24T00:22:00.156Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firestore.googleapis.com [omitted]
+[debug] [2026-01-24T00:22:00.157Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.157Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.157Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.167Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.168Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.168Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.169Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.169Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.171Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.172Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:22:00.172Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:22:00.173Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:22:00.173Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:22:00.173Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:22:00.413Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:22:00.413Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:22:00.414Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.414Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.414Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:22:00.422Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.422Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.423Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.427Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:22:00.427Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:22:00.455Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.462Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.462Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.472Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.472Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.472Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.476Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.476Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.476Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.477Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:22:00.477Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:22:00.477Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:22:00.477Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:22:00.478Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:22:00.480Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.480Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.481Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.482Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.482Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.482Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.482Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.483Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.483Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.483Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:22:00.483Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:22:00.483Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:22:00.483Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:22:00.484Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T00:22:00.530Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-24T00:22:00.532Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-24T00:22:00.910Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:22:00.910Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:22:00.913Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.913Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.913Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:22:00.918Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.918Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.918Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.922Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:22:00.922Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:22:00.930Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T00:22:00.931Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T00:22:00.932Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.932Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.932Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:22:00.937Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:22:00.938Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:22:00.938Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T00:22:00.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:22:00.944Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:25:41.209Z] ----------------------------------------------------------------------
+[debug] [2026-01-24T00:25:41.213Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase apphosting:backends:create
+[debug] [2026-01-24T00:25:41.213Z] CLI Version:   15.4.0
+[debug] [2026-01-24T00:25:41.214Z] Platform:      linux
+[debug] [2026-01-24T00:25:41.214Z] Node Version:  v20.18.1
+[debug] [2026-01-24T00:25:41.214Z] Time:          Sat Jan 24 2026 00:25:41 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-24T00:25:41.214Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-24T00:25:41.774Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:25:41.774Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:25:41.775Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:25:41.779Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:41.779Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:41.783Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 [none]
+[debug] [2026-01-24T00:25:43.471Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 200
+[debug] [2026-01-24T00:25:43.474Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 {"workspaceId":"advertising211-62292829","name":"Advertising211","workspaceRedirectUrl":"firebase-advertising211-1769034530371.cluster-l6vkdperq5ebaqo3qy4ksvoqom.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2026-01-24T00:21:09.872529Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-229017480698710671@monospace-per-ws-sa-2.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"yosfnqlisilh@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_nextjs.svg","templateArgs":"{\"language\":\"ts\",\"srcDir\":true,\"eslint\":true,\"app\":true,\"tailwind\":true,\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/nextjs","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtYWR2ZXJ0aXNpbmcyMTEtMTc2OTAzNDUzMDM3MS5jbHVzdGVyLWw2dmtkcGVycTVlYmFxbzNxeTRrc3ZvcW9tLmNsb3Vkd29ya3N0YXRpb25zLmRldiIsImlhdCI6MTc2OTIxNDM0MywiZXhwIjoxNzY5MzAwNzQzfQ.e0fUR8Q0tG_mrEmuWqQ19ZTZ5iYSgqEeZvzjuUG_amw2wzWpo7oEgShtD05JwCk4LX3UjJxrWXwe9xJVNn_6GqCUjSJpVB3bz8IHS8s7L_KlX_zJfPD1SbGRzSuYHyBCNTViRRxXKS92r_KDVXC14STspaPb-lTNcNLN_atxgIlBZnWuK26Gk3VWevSf88Q8ddRRKZGYJXobFy3p9uiJZDwfZGGMtlQMsHz_wpJqBJ4DTIjLcICaMyB2g9XhMwYa8775nVtnfVv7EC_rAmlcrh4q2LvwuUXnaJkn2n0VZPbYbKe4HQvTrYay6wEdEGJqdvSttWTZsJD42vIz0p0tBA","firebaseProjectId":"advertising-and-promotion211"}
+[debug] [2026-01-24T00:25:43.477Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:25:43.481Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:25:43.486Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:43.486Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:43.488Z] >>> [apiv2][query] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus [none]
+[debug] [2026-01-24T00:25:43.830Z] <<< [apiv2][status] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus 200
+[debug] [2026-01-24T00:25:43.833Z] <<< [apiv2][body] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus {"overallStatus":"ACCEPTED","uTosStatus":{"tos":{"id":"firebase","tosId":"FIREBASE_UNIVERSAL"},"status":"ACCEPTED","acceptedVersion":7},"childTosStatus":[{"tos":{"id":"cloud","tosId":"CLOUD_PLATFORM"},"status":"ACCEPTED","acceptedVersion":39},{"tos":{"id":"firebase_b2b","tosId":"FIREBASE_B2B"},"status":"ACCEPTED","acceptedVersion":1},{"tos":{"id":"universal","tosId":"GOOGLE_APIS"},"status":"ACCEPTED","acceptedVersion":6}],"termsUrl":"https://firebase.google.com/terms","perServiceStatus":[{"tosId":"APP_CHECK","serviceStatus":{"tos":{"id":"app_check","tosId":"APP_CHECK"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"APP_HOSTING_TOS","serviceStatus":{"tos":{"id":"app_hosting","tosId":"APP_HOSTING_TOS"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"FIREBASE_DATA_CONNECT","serviceStatus":{"tos":{"id":"data_connect","tosId":"FIREBASE_DATA_CONNECT"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"CORE_APPS","serviceStatus":{"tos":{"id":"core_apps","tosId":"CORE_APPS"},"status":"ACCEPTED","acceptedVersion":1}},{"tosId":"VERTEX_AI_IN_FIREBASE","serviceStatus":{"tos":{"id":"vertex_ai_in_firebase","tosId":"VERTEX_AI_IN_FIREBASE"},"status":"ACCEPTED","acceptedVersion":2}},{"tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION","serviceStatus":{"tos":{"id":"firebase_crashlytics_app_distribution","tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION"},"status":"ACCEPTED","acceptedVersion":4}},{"tosId":"GENERATIVE_LANGUAGE","serviceStatus":{"tos":{"id":"generative-language-api","tosId":"GENERATIVE_LANGUAGE"},"status":"ACCEPTED","acceptedVersion":3}}]}
+[debug] [2026-01-24T00:25:43.839Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:43.839Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:43.839Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-01-24T00:25:43.839Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:25:43.839Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-24T00:25:44.484Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-01-24T00:25:44.487Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-24T00:25:44.488Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:44.488Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:44.488Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [none]
+[debug] [2026-01-24T00:25:44.489Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2026-01-24T00:25:44.954Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts 409
+[debug] [2026-01-24T00:25:44.955Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [omitted]
+[debug] [2026-01-24T00:25:44.960Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:44.960Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:44.963Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy [none]
+[debug] [2026-01-24T00:25:45.206Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy 200
+[debug] [2026-01-24T00:25:45.208Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy {"version":1,"etag":"BwZJFtqzE/Y=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-24T00:25:45.210Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:45.210Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:45.210Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy [none]
+[debug] [2026-01-24T00:25:45.210Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"policy":{"version":1,"etag":"BwZJFtqzE/Y=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2026-01-24T00:25:46.392Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy 200
+[debug] [2026-01-24T00:25:46.393Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"version":1,"etag":"BwZJF1CkqXY=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-24T00:25:46.395Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:46.396Z] Checked if tokens are valid: true, expires at: 1769215961444
+[debug] [2026-01-24T00:25:46.397Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 
+[debug] [2026-01-24T00:25:47.122Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 200
+[debug] [2026-01-24T00:25:47.123Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations {"locations":[{"name":"projects/advertising-and-promotion211/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/advertising-and-promotion211/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/advertising-and-promotion211/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/advertising-and-promotion211/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/advertising-and-promotion211/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/advertising-and-promotion211/locations/us-east5","locationId":"us-east5","displayName":"Columbus"}]}
+[debug] [2026-01-24T00:39:53.617Z] ----------------------------------------------------------------------
+[debug] [2026-01-24T00:39:53.621Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase apphosting:backends:create
+[debug] [2026-01-24T00:39:53.622Z] CLI Version:   15.4.0
+[debug] [2026-01-24T00:39:53.623Z] Platform:      linux
+[debug] [2026-01-24T00:39:53.623Z] Node Version:  v20.18.1
+[debug] [2026-01-24T00:39:53.623Z] Time:          Sat Jan 24 2026 00:39:53 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-24T00:39:53.623Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-24T00:39:54.563Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T00:39:54.564Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T00:39:54.564Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T00:39:54.569Z] Checked if tokens are valid: false, expires at: 1769215961444
+[debug] [2026-01-24T00:39:54.570Z] Checked if tokens are valid: false, expires at: 1769215961444
+[debug] [2026-01-24T00:39:54.570Z] > refreshing access token with scopes: []
+[debug] [2026-01-24T00:39:54.574Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-24T00:39:54.575Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-24T00:39:54.885Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-24T00:39:54.886Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-24T00:39:54.914Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 [none]
+[debug] [2026-01-24T00:39:55.680Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 200
+[debug] [2026-01-24T00:39:55.683Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/advertising211-62292829 {"workspaceId":"advertising211-62292829","name":"Advertising211","workspaceRedirectUrl":"firebase-advertising211-1769034530371.cluster-l6vkdperq5ebaqo3qy4ksvoqom.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2026-01-24T00:21:09.872529Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-229017480698710671@monospace-per-ws-sa-2.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"yosfnqlisilh@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_nextjs.svg","templateArgs":"{\"language\":\"ts\",\"srcDir\":true,\"eslint\":true,\"app\":true,\"tailwind\":true,\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/nextjs","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtYWR2ZXJ0aXNpbmcyMTEtMTc2OTAzNDUzMDM3MS5jbHVzdGVyLWw2dmtkcGVycTVlYmFxbzNxeTRrc3ZvcW9tLmNsb3Vkd29ya3N0YXRpb25zLmRldiIsImlhdCI6MTc2OTIxNTE5NSwiZXhwIjoxNzY5MzAxNTk1fQ.I-gS7zvB1-yO78rd8bspMN6gQmYRT19c8zeBfVQ3XTx2mwx4ZyIB5VWbHSOaO40Tb0XVzKmdi1bkBFq72lU23WHg37fxqNSC5PE3YyLLd-uby0jbROOKURpz7wDwIYd2mWYajleIohtyXN_8SmLRoOKn7aGkTZ2s1ubui9lJizuE51mOnz6E4tx1rf4xs8D8tCXlZ3SOLUzLz_CNEFyWqxEcMyfJi7lAPZ8-T8RdCubdDtLetitPlnIT6pXgv-2LO2pcbjGsIcpEfLiKB10ETe_6rxJXRKKEWIT6YgarIQtDryKOf_qsqWoslkBWvHn0dKqj75cDfzkd9ecp4P5eIg","firebaseProjectId":"advertising-and-promotion211"}
+[debug] [2026-01-24T00:39:55.685Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T00:39:55.686Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T00:39:55.689Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:55.691Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:55.692Z] >>> [apiv2][query] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus [none]
+[debug] [2026-01-24T00:39:55.991Z] <<< [apiv2][status] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus 200
+[debug] [2026-01-24T00:39:55.993Z] <<< [apiv2][body] GET https://mobilesdk-pa.googleapis.com/v1/accessmanagement/tos:getStatus {"overallStatus":"ACCEPTED","uTosStatus":{"tos":{"id":"firebase","tosId":"FIREBASE_UNIVERSAL"},"status":"ACCEPTED","acceptedVersion":7},"childTosStatus":[{"tos":{"id":"cloud","tosId":"CLOUD_PLATFORM"},"status":"ACCEPTED","acceptedVersion":39},{"tos":{"id":"firebase_b2b","tosId":"FIREBASE_B2B"},"status":"ACCEPTED","acceptedVersion":1},{"tos":{"id":"universal","tosId":"GOOGLE_APIS"},"status":"ACCEPTED","acceptedVersion":6}],"termsUrl":"https://firebase.google.com/terms","perServiceStatus":[{"tosId":"APP_CHECK","serviceStatus":{"tos":{"id":"app_check","tosId":"APP_CHECK"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"APP_HOSTING_TOS","serviceStatus":{"tos":{"id":"app_hosting","tosId":"APP_HOSTING_TOS"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"FIREBASE_DATA_CONNECT","serviceStatus":{"tos":{"id":"data_connect","tosId":"FIREBASE_DATA_CONNECT"},"status":"ACCEPTED","acceptedVersion":3}},{"tosId":"CORE_APPS","serviceStatus":{"tos":{"id":"core_apps","tosId":"CORE_APPS"},"status":"ACCEPTED","acceptedVersion":1}},{"tosId":"VERTEX_AI_IN_FIREBASE","serviceStatus":{"tos":{"id":"vertex_ai_in_firebase","tosId":"VERTEX_AI_IN_FIREBASE"},"status":"ACCEPTED","acceptedVersion":2}},{"tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION","serviceStatus":{"tos":{"id":"firebase_crashlytics_app_distribution","tosId":"FIREBASE_CRASHLYTICS_APP_DISTRIBUTION"},"status":"ACCEPTED","acceptedVersion":4}},{"tosId":"GENERATIVE_LANGUAGE","serviceStatus":{"tos":{"id":"generative-language-api","tosId":"GENERATIVE_LANGUAGE"},"status":"ACCEPTED","acceptedVersion":3}}]}
+[debug] [2026-01-24T00:39:56.005Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:56.005Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:56.005Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-01-24T00:39:56.005Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/advertising-and-promotion211
+[debug] [2026-01-24T00:39:56.005Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-24T00:39:56.658Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-01-24T00:39:56.659Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts/firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-24T00:39:56.660Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:56.666Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:56.666Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [none]
+[debug] [2026-01-24T00:39:56.666Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2026-01-24T00:39:57.356Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts 409
+[debug] [2026-01-24T00:39:57.359Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/advertising-and-promotion211/serviceAccounts [omitted]
+[debug] [2026-01-24T00:39:57.367Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:57.367Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:39:57.367Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy [none]
+[debug] [2026-01-24T00:40:08.007Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy 200
+[debug] [2026-01-24T00:40:08.009Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:getIamPolicy {"version":1,"etag":"BwZJF1CkqXY=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-24T00:40:08.012Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:40:08.012Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:40:08.016Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy [none]
+[debug] [2026-01-24T00:40:08.016Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"policy":{"version":1,"etag":"BwZJF1CkqXY=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2026-01-24T00:40:09.307Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy 200
+[debug] [2026-01-24T00:40:09.310Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advertising-and-promotion211:setIamPolicy {"version":1,"etag":"BwZJF4QTwCE=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:347669961244@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-347669961244@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-347669961244@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:347669961244-compute@developer.gserviceaccount.com","serviceAccount:347669961244@cloudservices.gserviceaccount.com","serviceAccount:advertising-and-promotion211@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-347669961244@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@advertising-and-promotion211.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yosfnqlisilh@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-347669961244@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_cce91889cce6099a2f89","members":["serviceAccount:service-347669961244@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com"]}]}
+[debug] [2026-01-24T00:40:09.311Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:40:09.311Z] Checked if tokens are valid: true, expires at: 1769218793886
+[debug] [2026-01-24T00:40:09.317Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 
+[debug] [2026-01-24T00:40:10.066Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations 200
+[debug] [2026-01-24T00:40:10.067Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations {"locations":[{"name":"projects/advertising-and-promotion211/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/advertising-and-promotion211/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/advertising-and-promotion211/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/advertising-and-promotion211/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/advertising-and-promotion211/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/advertising-and-promotion211/locations/us-east5","locationId":"us-east5","displayName":"Columbus"}]}
+[debug] [2026-01-24T01:54:37.695Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T01:54:37.699Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T01:54:37.699Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T01:54:37.706Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T01:54:37.706Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T01:54:37.706Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T01:54:37.708Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T01:54:37.709Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T01:54:37.711Z] Checked if tokens are valid: false, expires at: 1769215961444
+[debug] [2026-01-24T01:54:37.711Z] Checked if tokens are valid: false, expires at: 1769215961444
+[debug] [2026-01-24T01:54:37.714Z] > refreshing access token with scopes: []
+[debug] [2026-01-24T01:54:37.737Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-24T01:54:37.737Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-24T01:54:37.884Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-24T01:54:37.886Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-24T01:54:37.940Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T01:54:38.234Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T01:54:38.236Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T01:54:38.238Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T01:54:38.239Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T01:54:38.239Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T01:54:38.247Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T01:54:38.248Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T01:54:38.249Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T01:54:38.250Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T01:54:38.250Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T01:54:38.250Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-24T01:54:38.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-24T01:54:38.251Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-24T01:54:38.252Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:38.252Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:38.252Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-24T01:54:38.870Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-24T01:54:38.871Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-24T01:54:38.871Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-24T01:54:38.872Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-24T01:54:38.872Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-24T01:54:38.876Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:38.876Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:38.879Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/-/backends 
+[debug] [2026-01-24T01:54:39.261Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/-/backends 200
+[debug] [2026-01-24T01:54:39.264Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/-/backends {"backends":[{"name":"projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211","createTime":"2026-01-23T14:01:48.787742575Z","updateTime":"2026-01-23T14:52:18.520449Z","uri":"advertising-app211--advertising-and-promotion211.us-east4.hosted.app","managedResources":[{"runService":{"service":"projects/347669961244/locations/us-east4/services/advertising-app211"}}],"codebase":{"repository":"projects/advertising-and-promotion211/locations/us-east4/connections/apphosting-github-conn-m0z8dwd/gitRepositoryLinks/yosfnqlisilh-web-Advertising-and-promotion211","rootDirectory":"/"},"uid":"68c3e6e8-82ae-441d-b368-a1a1a5ecc8fc","etag":"Q_GCJa8Q7pGD2f4J0S5fwPQb7imARMLWL8wwYkir2-I","reconciling":false,"servingLocality":"GLOBAL_ACCESS","serviceAccount":"firebase-app-hosting-compute@advertising-and-promotion211.iam.gserviceaccount.com","appId":"1:347669961244:web:6f92b7382c2d7dc8d5ddd9"}]}
+[debug] [2026-01-24T01:54:39.266Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:39.266Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:39.267Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:39.267Z] Checked if tokens are valid: true, expires at: 1769223276886
+[debug] [2026-01-24T01:54:39.267Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/traffic [none]
+[debug] [2026-01-24T01:54:39.271Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/domains pageSize=100
+[debug] [2026-01-24T01:54:39.850Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/traffic 200
+[debug] [2026-01-24T01:54:39.852Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/traffic {"name":"projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/traffic","rolloutPolicy":{"codebaseBranch":"main"},"reconciling":false,"createTime":"2026-01-23T14:01:51.599035265Z","updateTime":"2026-01-23T14:01:49.202492Z","etag":"wmAZDDKg1Iug3ToL5j_igQbs8uJsdhrRkpEfiPqPHrU","uid":"33658827-836f-4dca-9c99-7f47be477399","current":{"splits":[{"build":"projects/347669961244/locations/us-east4/backends/advertising-app211/builds/build-2026-01-23-004","percent":100}]}}
+[debug] [2026-01-24T01:54:39.874Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/domains 200
+[debug] [2026-01-24T01:54:39.876Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/domains {"domains":[{"name":"projects/advertising-and-promotion211/locations/us-east4/backends/advertising-app211/domains/advertising-app211--advertising-and-promotion211.us-east4.hosted.app","createTime":"2026-01-23T14:01:49.241449461Z","updateTime":"2026-01-23T14:01:49.202492Z","type":"DEFAULT","reconciling":false,"uid":"b22642e3-9fb1-4642-88ef-fd45b9a7d2b5","etag":"wR1O2kd-tHRIb_mE4Ao-XY8RDk0S3y0Ub8mfBOi7zeM"}]}
