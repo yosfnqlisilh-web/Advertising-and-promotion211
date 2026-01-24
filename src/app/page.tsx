@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
 import { useFormState, useFormStatus } from 'react-dom';
-import type { EmblaOptionsType } from 'embla-carousel'; // Import EmblaOptionsType
 
 // Import components and icons
 import { MenuIcon, XIcon, MailIcon, PhoneIcon, MapPinIcon, FacebookIcon, InstagramIcon, LinkedinIcon, QuoteIcon, ChevronDownIcon } from "../components/icons";
@@ -14,11 +13,9 @@ import ContactModal from "../components/ContactModal";
 import AnimatedSection from "../components/AnimatedSection";
 import TestimonialCard from "../components/TestimonialCard";
 import FaqItem from "../components/FaqItem";
-import { EmblaCarousel } from '../components/Carousel'; // Import Carousel
 
 import { submitContactForm } from './actions';
 import './animations.css';
-import './carousel.css'; // Import Carousel CSS
 
 // Define the type for our form state
 type FormState = {
@@ -87,8 +84,6 @@ export default function Home() {
     { question: "هل يمكنني رؤية التصميم قبل البدء بالتنفيذ؟", answer: "بالتأكيد. نقوم بإنشاء تصميم ثلاثي الأبعاد (3D) للمشروع لعرضه على العميل وأخذ موافقته الكاملة قبل البدء بأي أعمال تنفيذية، لضمان تطابق النتائج مع توقعاتكم." },
   ];
   
-  const carouselOptions: EmblaOptionsType = { loop: true, align: 'start' };
-
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-gray-200 font-sans">
       <header className="sticky top-0 z-50 w-full bg-gray-900/80 backdrop-blur-xl border-b border-white/10">
@@ -155,10 +150,8 @@ export default function Home() {
               <h2 className="text-5xl sm:text-6xl font-bold tracking-tight bg-gold-gradient bg-clip-text text-transparent pb-4">خدماتنا المتكاملة</h2>
               <p className="mt-6 text-xl text-gray-400">من الفكرة إلى التنفيذ، نقدم حلولاً إبداعية لتحديث الواجهات وتصميم كافة أنواع اللوحات الإعلانية.</p>
             </div>
-            <div className="mt-20 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-12">
-              <EmblaCarousel options={carouselOptions}>
-                {services.map((service, index) => <ServiceCard key={index} {...service} />)}
-              </EmblaCarousel>
+            <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+              {services.map((service, index) => <ServiceCard key={index} {...service} />)}
             </div>
           </div>
         </AnimatedSection>
@@ -169,10 +162,8 @@ export default function Home() {
               <h2 className="text-5xl sm:text-6xl font-bold tracking-tight bg-gold-gradient bg-clip-text text-transparent pb-4">من أعمالنا</h2>
               <p className="mt-6 text-xl text-gray-400">نفخر بتقديم أعمال استثنائية تعكس شغفنا بالجودة والابتكار. تصفح بعض من مشاريعنا.</p>
             </div>
-            <div className="mt-20 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-12">
-              <EmblaCarousel options={carouselOptions}>
-                {works.map((work, index) => <WorkCard key={index} {...work} />)}
-              </EmblaCarousel>
+            <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+              {works.map((work, index) => <WorkCard key={index} {...work} />)}
             </div>
           </div>
         </AnimatedSection>
@@ -199,10 +190,8 @@ export default function Home() {
               <h2 className="text-5xl sm:text-6xl font-bold tracking-tight bg-gold-gradient bg-clip-text text-transparent pb-4">آراء موثوقة</h2>
               <p className="mt-6 text-xl text-gray-400">شهادات عملائنا هي أساس سمعتنا. نفخر بثقتهم ونسعى دائمًا لتقديم الأفضل.</p>
             </div>
-            <div className="mt-20 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8">
-              <EmblaCarousel options={carouselOptions}>
-                {testimonials.map((testimonial, index) => <TestimonialCard key={index} {...testimonial} />)}
-              </EmblaCarousel>
+            <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, index) => <TestimonialCard key={index} {...testimonial} />)}
             </div>
           </div>
         </AnimatedSection>
