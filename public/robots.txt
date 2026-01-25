@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://advertising-app211--advertising-and-promotion211.us-east4.hosted.app/sitemap.xml
