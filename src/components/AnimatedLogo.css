@@ -1,0 +1,36 @@
+/* حركة الارتداد الميكانيكي (الهزة) للجزء الكبير */
+@keyframes slam-left {
+    0% { transform: translateX(-150px); opacity: 0; }
+    70% { transform: translateX(8px); opacity: 1; } /* تجاوز النقطة للهزة */
+    85% { transform: translateX(-3px); } /* ارتداد بسيط */
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* حركة الارتداد الميكانيكي (الهزة) للجزء الصغير */
+@keyframes slam-right {
+    0% { transform: translateX(150px); opacity: 0; }
+    70% { transform: translateX(-8px); opacity: 1; }
+    85% { transform: translateX(3px); }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* ظهور النص بتلاشي صريح */
+@keyframes text-reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.part-large {
+    animation: slam-left 0.5s cubic-bezier(0.17, 0.89, 0.32, 1.2) 0.2s forwards;
+    opacity: 0;
+}
+
+.part-small {
+    animation: slam-right 0.5s cubic-bezier(0.17, 0.89, 0.32, 1.2) 0.8s forwards;
+    opacity: 0;
+}
+
+.text-element {
+    animation: text-reveal 0.4s ease-out 1.5s forwards;
+    opacity: 0;
+}
