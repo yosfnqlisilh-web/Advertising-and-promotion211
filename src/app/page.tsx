@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useFormStatus } from 'react-dom';
 
 // Import components and icons
 import { MenuIcon, XIcon, MailIcon, PhoneIcon, MapPinIcon, FacebookIcon, InstagramIcon, LinkedinIcon, QuoteIcon, ChevronDownIcon } from "../components/icons";
@@ -52,7 +52,7 @@ export default function Home() {
     errors: undefined, 
     success: false 
   };
-  const [state, dispatch] = useFormState(submitContactForm, initialState);
+  const [state, dispatch] = useActionState(submitContactForm, initialState);
 
   const services = [
     { title: "واجهات كلادينج", subtitles: ["تجاري", "سكني", "ديكور داخلي"], description: "تنفيذ وتلبيس واجهات المباني باستخدام الكلادينج، الجبس بورد، والأسمنت بورد بتصاميم عصرية.", images: ["https://i.imgur.com/YrTCdO2.png", "https://i.imgur.com/5aTvOYa.png", "https://i.imgur.com/2eOItYF.jpg", "https://i.imgur.com/8Thwfi0.png"] },

@@ -1758,3 +1758,94 @@
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [debug] [2026-01-29T03:48:09.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
 [debug] [2026-01-29T03:48:09.178Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-31T22:15:16.199Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:16.200Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-31T22:15:16.207Z] Checked if tokens are valid: false, expires at: 1769661255672
+[debug] [2026-01-31T22:15:16.208Z] Checked if tokens are valid: false, expires at: 1769661255672
+[debug] [2026-01-31T22:15:16.211Z] > refreshing access token with scopes: []
+[debug] [2026-01-31T22:15:16.218Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-31T22:15:16.219Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-31T22:15:16.284Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:16.284Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-31T22:15:16.285Z] Checked if tokens are valid: false, expires at: 1769661255672
+[debug] [2026-01-31T22:15:16.285Z] Checked if tokens are valid: false, expires at: 1769661255672
+[debug] [2026-01-31T22:15:16.286Z] > refreshing access token with scopes: []
+[debug] [2026-01-31T22:15:16.286Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-31T22:15:16.287Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-31T22:15:16.347Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-31T22:15:16.352Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-31T22:15:16.379Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-31T22:15:16.403Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-31T22:15:16.403Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-31T22:15:16.423Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-31T22:15:16.611Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-31T22:15:16.614Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-31T22:15:16.630Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:16.631Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:16.657Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:16.657Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:16.657Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-31T22:15:16.657Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com  x-goog-user-project=advertising-and-promotion211
+[debug] [2026-01-31T22:15:16.661Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-31T22:15:16.661Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com  x-goog-user-project=advertising-and-promotion211
+[debug] [2026-01-31T22:15:17.014Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-31T22:15:17.017Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[debug] [2026-01-31T22:15:17.025Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:17.026Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:17.046Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:17.047Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:17.047Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-31T22:15:17.047Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com  x-goog-user-project=advertising-and-promotion211
+[debug] [2026-01-31T22:15:17.051Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [none]
+[debug] [2026-01-31T22:15:17.051Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com  x-goog-user-project=advertising-and-promotion211
+[debug] [2026-01-31T22:15:17.375Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-31T22:15:17.375Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-31T22:15:17.502Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-31T22:15:17.505Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-31T22:15:17.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:17.517Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-31T22:15:17.518Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:17.518Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:17.519Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-31T22:15:17.859Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com 403
+[debug] [2026-01-31T22:15:17.860Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebaseio.com [omitted]
+[debug] [2026-01-31T22:15:17.932Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-31T22:15:17.932Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/advertising-and-promotion211/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-31T22:15:18.125Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-31T22:15:18.125Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-31T22:15:18.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:18.140Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-31T22:15:18.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:18.177Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-31T22:15:18.180Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:18.180Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:18.180Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-31T22:15:18.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:18.186Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-31T22:15:18.187Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:18.187Z] Checked if tokens are valid: true, expires at: 1769901315403
+[debug] [2026-01-31T22:15:18.187Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo [none]
+[debug] [2026-01-31T22:15:18.795Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-31T22:15:18.798Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-31T22:15:18.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:18.801Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
+[debug] [2026-01-31T22:15:18.827Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo 200
+[debug] [2026-01-31T22:15:18.830Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/advertising-and-promotion211/billingInfo {"name":"projects/advertising-and-promotion211/billingInfo","projectId":"advertising-and-promotion211","billingAccountName":"billingAccounts/01C117-4005EB-E7494F","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-31T22:15:18.841Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-31T22:15:18.841Z] > authorizing via signed-in user (yosfnqlisilh@gmail.com)
