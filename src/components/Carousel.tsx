@@ -8,7 +8,7 @@ interface CarouselProps {
 }
 
 const EmblaCarousel: React.FC<CarouselProps> = ({ children, options }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [emblaRef] = useEmblaCarousel(options);
 
   return (
     <div className="embla">

@@ -9,11 +9,22 @@ const contactFormSchema = z.object({
   message: z.string().min(10, { message: 'الرسالة يجب أن تكون 10 أحرف على الأقل.' })
 });
 
+// Define the shape of our state
+export type FormState = {
+  message: string;
+  errors?: {
+    name?: string[];
+    phone?: string[];
+    message?: string[];
+  };
+  success: boolean;
+};
+
 // IMPORTANT: The Resend API key is exposed here for demonstration purposes.
 // In a real production application, this should be a secret stored in environment variables.
 const resend = new Resend('re_MQRq3csa_DqKAiDdEQgcpho8MEzS5Ldmm');
 
-export async function submitContactForm(prevState: any, formData: FormData) {
+export async function submitContactForm(prevState: FormState, formData: FormData): Promise<FormState> {
   const validatedFields = contactFormSchema.safeParse({
     name: formData.get('name'),
     phone: formData.get('phone'),

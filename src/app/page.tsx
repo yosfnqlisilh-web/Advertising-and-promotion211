@@ -3,10 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
-import { useActionState, useFormStatus } from 'react-dom';
+import { useFormState, useFormStatus } from 'react-dom'; // Changed useActionState to useFormState
+
+// Import data
+import { services, works, testimonials, faqs } from '../lib/data';
 
 // Import components and icons
-import { MenuIcon, XIcon, MailIcon, PhoneIcon, MapPinIcon, FacebookIcon, InstagramIcon, LinkedinIcon, QuoteIcon, ChevronDownIcon } from "../components/icons";
+import { MenuIcon, XIcon, MailIcon, PhoneIcon, MapPinIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "../components/icons";
 import WorkCard from "../components/WorkCard";
 import ServiceCard from "../components/ServiceCard";
 import ContactModal from "../components/ContactModal";
@@ -14,19 +17,8 @@ import AnimatedSection from "../components/AnimatedSection";
 import TestimonialCard from "../components/TestimonialCard";
 import FaqItem from "../components/FaqItem";
 
-import { submitContactForm } from './actions';
+import { submitContactForm, FormState } from './actions';
 import './animations.css';
-
-// Define the type for our form state
-type FormState = {
-  message: string;
-  errors?: {
-    name?: string[];
-    phone?: string[];
-    message?: string[];
-  };
-  success: boolean;
-};
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -46,44 +38,14 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   
-  // Initialize state with the correct type
   const initialState: FormState = { 
     message: "", 
     errors: undefined, 
     success: false 
   };
-  const [state, dispatch] = useActionState(submitContactForm, initialState);
+  // Changed useActionState to useFormState
+  const [state, dispatch] = useFormState(submitContactForm, initialState);
 
-  const services = [
-    { title: "واجهات كلادينج", subtitles: ["تجاري", "سكني", "ديكور داخلي"], description: "تنفيذ وتلبيس واجهات المباني باستخدام الكلادينج، الجبس بورد، والأسمنت بورد بتصاميم عصرية.", images: ["https://i.imgur.com/YrTCdO2.png", "https://i.imgur.com/5aTvOYa.png", "https://i.imgur.com/2eOItYF.jpg", "https://i.imgur.com/8Thwfi0.png"] },
-    { title: "لوحات اعلانية", subtitles: ["حروف بارزه", "لوحات المحلات", "شاشات رقميه", "شعارات استثنائيه"], description: "تصميم وتصنيع كافة أنواع لوحات المحلات، من الحروف البارزة إلى الشاشات الرقمية واللافتات الإعلانية.", images: ["https://i.imgur.com/EzNhASb.jpg", "https://i.imgur.com/zWUhCEc.jpg", "https://i.imgur.com/89CDMkW.png", "https://i.imgur.com/T4dGKwQ.png"] },
-    { title: "هياكل معدنية", subtitles: ["لوحات عملاقه", "اسوار حمايه", "هناجر"], description: "بناء أسوار دعائية بهياكل معدنية متنوعة، مصممة خصيصًا لتتناسب مع متطلبات المشروع وميزانيته.", images: ["https://i.imgur.com/JUiqIBd.png", "https://i.imgur.com/uMTqBYi.jpg", "https://i.imgur.com/f07CxyZ.png", "https://i.imgur.com/GgePb8P.png"] },
-    { title: "طباعة رقمية", subtitles: ["بنر", "فليكس", "استيكر", "لوحات", "رول اب", "بوب اب", "بوثات"], description: "تقديم حلول الطباعة الرقمية بجميع أنواعها لتغطية كافة الاحتياجات الإعلانية والتجارية.", images: ["https://i.imgur.com/lb2mfJ6.png", "https://i.imgur.com/dMKdaQC.png", "https://i.imgur.com/jFDHpA0.png", "https://i.imgur.com/FbS5a8I.png"] },
-    { title: "أعمال الحديد", subtitles: ["قص ليزر", "أبواب", "درابزين", "مضلات", "سواتر", "اسقف الاحواش"], description: "تصنيع وتركيب المظلات والسواتر، الهياكل المعدنية، وأعمال الحدادة المساندة لمشاريع الدعاية.", images: ["https://i.imgur.com/zRHw0N8.png", "https://i.imgur.com/vC1BF6q.png", "https://i.imgur.com/JwbvsLe.png", "https://i.imgur.com/1wYNwDo.png"] },
-    { title: "صيانة وترميم", subtitles: ["تجديد", "تطوير", "اضافة"], description: "نقدم خدمات الصيانة الدورية والترميم للوحات الإعلانية وواجهات الكلادينج لضمان استمرارها بأفضل مظهر.", images: ["https://i.imgur.com/65dxBTN.png", "https://i.imgur.com/L8IwtO5.png"] },
-  ];
-
-  const works = [
-    { title: "تطوير واجهة فيلا بالنسيم", category: "تلبيس وتطوير الواجهات", imgSrc: "https://i.imgur.com/YrTCdO2.png", description: "عمل تطوير فيلا في حي النسيم، باستخدام كلادينج خشبي بنظام الشرائح مع تلبيس إطارات الشبابيك بكلادينج مقصوص بتقنية الليزر." },
-    { title: "لوحة لمطعم دجاج شواية", category: "اللوحات الإعلانية", imgSrc: "https://i.imgur.com/zWUhCEc.jpg", description: "تصنيع وتركيب لوحة حروف بارزة مضيئة لمطعم 'دجاج شواية'، مع خلفية من الكلادينج لإبراز العلامة التجارية وجذب الزبائن." },
-    { title: "لافتة أرض فضاء", category: "الأسوار والهياكل", imgSrc: "https://i.imgur.com/JUiqIBd.png", description: "تصميم وتنفيذ لافتة إعلانية متكاملة لأرض فضاء، حل اقتصادي وعملي ومثالي للاستخدامات المؤقتة والدائمة." },
-  ];
-
-  const testimonials = [
-    { name: "شركة أساس", title: "مقاولات عامة", text: "قمنا بتجديد واجهة للمبنى التجاري الخاص بنا. العمل كان منظم والمواعيد دقيقة. شكرًا لفريق فن الإعلان على الاحترافية.", platformLogo: "https://i.imgur.com/83UcyCK.png" }, // Google
-    { name: "م. عبد العزيز", title: "استشاري هندسي", text: "تعاملت معهم في عدة مشاريع لتنفيذ لوحات إعلانية. الجودة جيدة والتركيب يتم بشكل آمن وسريع. أنصح بهم.", platformLogo: "https://i.imgur.com/cUTwVzl.png" }, // WhatsApp
-    { name: "متجر أزهار", title: "تجارة التجزئة", text: "اللوحة الجديدة للمحل أعطت هوية مميزة للمكان. التصميم كان بسيط وجميل. سعيد جدًا بالنتيجة النهائية.", platformLogo: "https://i.imgur.com/2s2XobD.png" }, // Instagram
-    { name: "مطعم ركن الشام", title: "قطاع الأغذية", text: "خدمة جيدة وأسعارهم منافسة. تم تسليم اللوحة في الوقت المتفق عليه. عمل متقن.", platformLogo: "https://i.imgur.com/83UcyCK.png" }, // Google
-    { name: "خالد السالم", title: "مالك عقار", text: "ركبت كلادينج لواجهة العمارة السكنية. الشكل النهائي كان جيد جدًا وأضاف قيمة للعقار. الضمان على الألوان مطمئن.", platformLogo: "https://i.imgur.com/eN8eB3D.png" }, // Facebook
-  ];
-
-  const faqs = [
-    { question: "كم يستغرق تنفيذ المشروع؟", answer: "يعتمد على حجم المشروع وتعقيده. بشكل عام، يستغرق التنفيذ من يومين إلى 8 أيام بعد اعتماد التصميم النهائي والمواد." },
-    { question: "هل تقدمون ضمانًا على أعمالكم؟", answer: "نعم بالتأكيد. نقدم ضمانًا لمدة عامين (2) على الإضاءة (LED)، وضمانًا لمدة عام (1) على ألوان الطباعة الخارجية مثل البنر والفلكس. أما ألواح الكلادينج، فيصل ضمان ألوانها إلى 15 عامًا وهو مقدم مباشرة من المصنع." },
-    { question: "ما هي مناطق تغطيتكم؟", answer: "نحن نخدم مدينة الرياض وجميع المناطق المحيطة بها. لمشاريع خارج هذا النطاق، يرجى التواصل معنا لبحث إمكانية التنفيذ." },
-    { question: "هل يمكنني رؤية التصميم قبل البدء بالتنفيذ؟", answer: "بالتأكيد. نقوم بإنشاء تصميم ثلاثي الأبعاد (3D) للمشروع لعرضه على العميل وأخذ موافقته الكاملة قبل البدء بأي أعمال تنفيذية، لضمان تطابق النتائج مع توقعاتكم." },
-  ];
-  
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-gray-200 font-sans">
       <header className="sticky top-0 z-50 w-full bg-gray-900/80 backdrop-blur-xl border-b border-white/10">
@@ -173,7 +135,7 @@ export default function Home() {
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
                     <div className="max-w-xl">
                         <h2 className="text-5xl sm:text-6xl font-bold tracking-tight bg-gold-gradient bg-clip-text text-transparent pb-4">خبرتنا في خدمتكم</h2>
-                        <p className="mt-8 text-xl text-gray-300 leading-relaxed">في "فن الإعلان"، نجمع بين سنوات من الخبرة وشغف بالإبداع. انطلقنا من الرياض لنقدم حلولاً متكاملة في عالم الدعاية والإعلان والمقاولات، مع التزام تام بأعلى معايير الجودة.</p>
+                        <p className="mt-8 text-xl text-gray-300 leading-relaxed">في &quot;فن الإعلان&quot;، نجمع بين سنوات من الخبرة وشغف بالإبداع. انطلقنا من الرياض لنقدم حلولاً متكاملة في عالم الدعاية والإعلان والمقاولات، مع التزام تام بأعلى معايير الجودة.</p>
                         <p className="mt-8 text-xl text-gray-300 leading-relaxed">فريقنا مكون من محترفين يعملون لتحويل رؤية عملائنا إلى حقيقة ملموسة تترك بصمة مميزة. نؤمن بأن كل مشروع هو فرصة لتقديم عمل فني يليق بعملائنا.</p>
                     </div>
                     <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
