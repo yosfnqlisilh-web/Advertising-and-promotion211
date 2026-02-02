@@ -1,7 +1,7 @@
-
 import type { Metadata } from "next";
 import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header"; // استيراد الهيدر
 
 const notoKufiArabic = Noto_Kufi_Arabic({ 
   subsets: ["arabic"],
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "فن الإعلان للمقاولات | واجهات كلادينج ولوحات إعلانية بالرياض",
     description: "نقدم حلولاً مبتكرة في الكلادينج واللوحات الإعلانية وأعمال الديكور التي تضمن تميز علامتك التجارية في قلب الرياض.",
-    url: "YOUR_DEPLOYED_URL_HERE", // I will replace this after deployment
+    url: "YOUR_DEPLOYED_URL_HERE",
     siteName: "فن الإعلان للمقاولات",
     images: [
       {
-        url: "https://i.imgur.com/5aTvOYa.png", // Main cladding image
+        url: "https://i.imgur.com/5aTvOYa.png", 
         width: 800,
         height: 600,
         alt: "واجهة كلادينج حديثة",
       },
        {
-        url: "https://i.imgur.com/EzNhASb.jpg", // Main sign image
+        url: "https://i.imgur.com/EzNhASb.jpg", 
         width: 800,
         height: 600,
         alt: "لوحة إعلانية بارزة",
@@ -53,7 +53,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={notoKufiArabic.className}>{children}</body>
+      <body className={notoKufiArabic.className}>
+        <Header /> 
+        {children}
+        </body>
     </html>
   );
 }

@@ -2,144 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-.embla {
-  --slide-spacing: 1rem;
-  --slide-size: 100%;
-  overflow: hidden;
-}
-.embla__container {
-  backface-visibility: hidden;
-  display: flex;
-  touch-action: pan-y;
-  margin-left: calc(var(--slide-spacing) * -1);
-}
-.embla__slide {
-  flex: 0 0 var(--slide-size);
-  min-width: 0;
-  padding-left: var(--slide-spacing);
-  position: relative;
-}
-.embla__slide__img {
-  display: block;
-  height: auto;
-  width: 100%;
-  object-fit: cover;
+/* Centering the bot icon content */
+.eyes-container {
+    display: flex;
+    gap: 12px;
+    /* animation is removed, handled by JS now */
 }
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-  }
+.eye {
+    width: 10px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
 }
 
-.bg-gold-gradient {
-    background-image: linear-gradient(145deg, #FFD700, #DAA520, #B8860B);
+.mouth {
+    width: 25px;
+    height: 8px;
+    border: 3px solid white;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    margin-top: 8px; /* Corrected from 8px to create space */
 }
 
-.shadow-gold {
-    box-shadow: 0 10px 30px -10px rgba(255, 215, 0, 0.5);
+/* General Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
 }
 
-.hover\:shadow-gold-hover:hover {
-    box-shadow: 0 15px 40px -10px rgba(218, 165, 32, 0.7);
+/* Pulse animation for bot click */
+.animate-pulse {
+  animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.animate-shadow-gold {
-  animation: shadow-pulse 3s infinite;
-}
-
-@keyframes shadow-pulse {
+@keyframes pulse {
   0%, 100% {
-    box-shadow: 0 10px 30px -10px rgba(255, 215, 0, 0.5);
+    opacity: 1;
+    transform: scale(1);
   }
   50% {
-    box-shadow: 0 15px 40px -5px rgba(218, 165, 32, 0.8);
+    opacity: 0.9;
+    transform: scale(1.1);
   }
 }
 
-/* Swiper Custom Styles */
-.service-swiper .swiper-button-next, .service-swiper .swiper-button-prev {
-  color: #FFD700; /* Gold color */
-  transform: scale(0.7);
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  transition: opacity 0.3s;
-  opacity: 0;
+/* Loading dots animation for chat */
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60% { content: '...'; }
 }
 
-.service-swiper:hover .swiper-button-next, .service-swiper:hover .swiper-button-prev {
-    opacity: 1;
+.loading-dots::after {
+    content: '.';
+    animation: dots 1.5s steps(5, end) infinite;
 }
 
-.service-swiper .swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.5);
-  width: 12px;
-  height: 12px;
-  transition: background-color 0.3s, width 0.3s;
+/* Animated Gradient Text for Headers */
+.animated-gradient-text {
+  background-image: linear-gradient(
+    -45deg,
+    #FFD700, /* Gold */
+    #FFFFFF, /* White */
+    #F7941D, /* Orange-Gold */
+    #FFFFFF, /* White */
+    #FFD700  /* Gold */
+  );
+  background-size: 200% auto;
+  color: #fff; /* Fallback color */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated-gradient-text-flow 5s ease-in-out infinite;
 }
 
-.service-swiper .swiper-pagination-bullet-active {
-  background: #FFD700; /* Gold color */
-  width: 30px;
-  border-radius: 6px;
+@keyframes animated-gradient-text-flow {
+  to {
+    background-position: 200% center;
+  }
 }
