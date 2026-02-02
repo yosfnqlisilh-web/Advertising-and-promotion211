@@ -1,14 +1,16 @@
-
+'use client';
 import Image from 'next/image';
 
-const RealWhatsAppIcon = ({ className }: { className?: string }) => (
-  <Image
-    src="https://i.imgur.com/gVIm2tq.png" // URL for a high-quality WhatsApp logo
-    alt="WhatsApp Logo"
-    width={40}
-    height={40}
-    className={className}
-  />
-);
+const RealWhatsAppIcon = ({ className }: { className?: string }) => {
+  return (
+    <Image 
+      src="https://i.imgur.com/LPQX7EX.png" 
+      alt="WhatsApp Icon" 
+      width={32} 
+      height={32} 
+      className={className}
+    />
+  );
+};
 
 export default RealWhatsAppIcon;

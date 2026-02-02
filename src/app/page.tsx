@@ -8,7 +8,7 @@ import { useFormState, useFormStatus } from 'react-dom';
 import { works, testimonials, faqs } from '../lib/data';
 
 // Import components and icons
-import { MailIcon, PhoneIcon, MapPinIcon } from "../components/icons";
+import { MailIcon, PhoneIcon, MapPinIcon, ArrowRightIcon } from "../components/icons";
 import RealFacebookIcon from "../components/SocialIcons/RealFacebookIcon";
 import RealGoogleMapsIcon from "../components/SocialIcons/RealGoogleMapsIcon";
 import RealWhatsAppIcon from "../components/SocialIcons/RealWhatsAppIcon";
@@ -51,7 +51,7 @@ export default function Home() {
         <section className="relative h-screen min-h-[800px] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed" style={{backgroundImage: "url('https://images.unsplash.com/photo-1542871793-1c39a82d7335?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
           <div className="absolute inset-0 bg-black/75" />
           <div className="relative z-10 container">
-            <h1 className="text-6xl sm:text-7xl md:text-8xl font-extrabold animated-gradient-text pb-4 leading-snug md:leading-relaxed">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold animated-gradient-text pb-4 leading-snug md:leading-relaxed">
               تصميم لوحات محلات<br/>وحروف بارزة تترك أثراً
             </h1>
             <p className="mt-8 max-w-4xl mx-auto text-xl sm:text-2xl text-gray-200">
@@ -71,7 +71,13 @@ export default function Home() {
               <p className="mt-6 text-xl text-gray-400">نفخر بتقديم أعمال استثنائية تعكس شغفنا بالجودة والابتكار. تصفح بعض من مشاريعنا في تصميم وتركيب لوحات المحلات والحروف البارزة.</p>
             </div>
             <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-              {works.map((work, index) => <WorkCard key={index} {...work} />)}
+              {works.slice(0, 3).map((work, index) => <WorkCard key={index} {...work} />)}
+            </div>
+            <div className="mt-20 text-center">
+                <Link href="/gallery" className="group inline-flex items-center justify-center rounded-lg bg-yellow-400 px-8 py-4 text-lg font-bold text-black transition-all duration-300 hover:bg-yellow-300 hover:shadow-xl hover:shadow-yellow-400/20 transform hover:-translate-y-1">
+                    <span>شاهد المزيد من أعمالنا</span>
+                    <ArrowRightIcon className="w-6 h-6 mr-3 transform transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
             </div>
           </div>
         </AnimatedSection>

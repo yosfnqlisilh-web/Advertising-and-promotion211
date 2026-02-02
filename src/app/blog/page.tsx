@@ -1,52 +1,50 @@
+
 import Link from 'next/link';
+import Image from 'next/image';
+import { posts } from '../../lib/blog-data';
+import AnimatedSection from '../../components/AnimatedSection';
+import { ArrowRightIcon } from '../../components/icons';
 
-const articles = [
-    {
-        slug: 'how-to-choose-sign',
-        title: 'كيف تختار اللوحة الإعلانية المناسبة لنشاطك التجاري في الرياض؟',
-        excerpt: 'دليلك الشامل لفهم الفروقات بين أنواع لوحات المحلات، من الحروف البارزة إلى الزنكور، وكيف تضمن جذب انتباه عملائك ليلاً ونهارًا.'
-    },
-    {
-        slug: 'why-cladding-is-best-for-riyadh',
-        title: 'لماذا يعتبر الكلادينج الخيار الأفضل لواجهات المباني في جو الرياض الحار؟',
-        excerpt: 'اكتشف كيف تساهم واجهات الكلادينج في عزل الحرارة، مقاومة الغبار، والحفاظ على مظهر مبناك التجاري عصريًا لسنوات طويلة مع ضمان يصل إلى 15 عامًا.'
-    },
-    {
-        slug: 'riyadh-municipality-conditions',
-        title: 'شروط بلدية الرياض الجديدة لتركيب اللوحات الإعلانية للمحلات',
-        excerpt: 'قبل أن تدفع ريالاً واحدًا، تعرّف على أحدث معايير ومقاسات البلدية لتجنب المخالفات وضمان تركيب لوحة قانونية وجذابة لمشروعك.'
-    }
-];
+export default function BlogPage() {
+  return (
+    <div className="bg-gray-900 text-gray-200 min-h-screen">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+        <AnimatedSection id="blog-header">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-6xl sm:text-7xl font-extrabold animated-gradient-text pb-4">
+              مدونة فن الإعلان
+            </h1>
+            <p className="mt-6 text-xl text-gray-300">
+              مقالات ونصائح وإلهام في عالم الدعاية والإعلان والكلادينج.
+            </p>
+          </div>
+        </AnimatedSection>
 
-const BlogIndexPage = () => {
-    return (
-        <div className="bg-gray-900 text-white min-h-screen">
-            <div className="container mx-auto px-6 py-24">
-                <div className="text-center mb-16">
-                    <h1 className="text-5xl font-extrabold animated-gradient-text">مدونة فن الإعلان</h1>
-                    <p className="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">مقالات من خبراء لمساعدتك على اتخاذ القرارات الصحيحة لنمو أعمالك في الرياض.</p>
+        <AnimatedSection id="blog-posts" className="mt-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {posts.map((post) => (
+              <Link href={`/blog/${post.slug}`} key={post.slug} className="group block bg-gray-800 rounded-2xl overflow-hidden border border-white/10 hover:border-yellow-400 transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-56 w-full">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {articles.map((article) => (
-                        <Link href={`/blog/${article.slug}`} key={article.slug}>
-                            <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-yellow-500/30 transform hover:-translate-y-2 transition-all duration-300 ease-in-out h-full flex flex-col">
-                                <div className="p-8 flex-grow">
-                                    <h2 className="text-2xl font-bold text-yellow-400 mb-4">{article.title}</h2>
-                                    <p className="text-gray-300 leading-relaxed">{article.excerpt}</p>
-                                </div>
-                                <div className="p-8 pt-0">
-                                     <span className="text-yellow-500 font-semibold hover:text-yellow-300 transition-colors duration-200">اقرأ المزيد ←</span>
-                                </div>
-                            </div>
-                        </Link>
-                    ))}
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors duration-300">{post.title}</h2>
+                  <div className="flex items-center font-semibold text-yellow-400">
+                    <span>إقرأ المزيد</span>
+                    <ArrowRightIcon className="w-5 h-5 mr-2 transform transition-transform duration-300 group-hover:translate-x-1" />
+                  </div>
                 </div>
-            </div>
-        </div>
-    );
-};
-
-export default BlogIndexPage;
-
-// Trigger rebuild
+              </Link>
+            ))}
+          </div>
+        </AnimatedSection>
+      </main>
+    </div>
+  );
+}

@@ -1,5 +1,6 @@
 
 /** @type {import('next').NextConfig} */
+// Triggering a server restart to apply image domain configuration.
 const nextConfig = {
     skipTrailingSlashRedirect: true,
     images: {

@@ -1,4 +1,11 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+
+# Allow all user-agents
 User-agent: *
 Allow: /
 
-Sitemap: https://advertising-app211--advertising-and-promotion211.us-east4.hosted.app/sitemap.xml
+# Disallow Next.js specific folders
+Disallow: /_next/
+
+# Point to the sitemap
+Sitemap: https://fan-alelan.com/sitemap.xml
