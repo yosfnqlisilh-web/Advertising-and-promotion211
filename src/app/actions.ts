@@ -3,24 +3,22 @@
 import { z } from 'zod';
 import { Resend } from 'resend';
 
-// Schema for contact form
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: 'الاسم يجب أن يكون 3 أحرف على الأقل.' }),
   phone: z.string().regex(/^05[0-9]{8}$/, { message: 'الرجاء إدخال رقم جوال سعودي صحيح.' }),
   message: z.string().min(10, { message: 'الرسالة يجب أن تكون 10 أحرف على الأقل.' })
 });
 
-// State for contact form
-export type FormState = {
-  message: string;
-  errors?: { name?: string[]; phone?: string[]; message?: string[]; };
-  success: boolean;
+const getResend = () => {
+    const key = process.env.RESEND_API_KEY;
+    if (!key) return null;
+    return new Resend(key);
 };
 
-const resend = new Resend(process.env.RESEND_API_KEY); // Use environment variable
+export async function submitContactForm(prevState: any, formData: FormData) {
+  const resend = getResend();
+  if (!resend) return { message: 'خدمة الإيميلات غير مفعلة.', success: false, errors: {} };
 
-// Server Action for submitting contact form
-export async function submitContactForm(prevState: FormState, formData: FormData): Promise<FormState> {
   const validatedFields = contactFormSchema.safeParse({
     name: formData.get('name'),
     phone: formData.get('phone'),
@@ -41,58 +39,50 @@ export async function submitContactForm(prevState: FormState, formData: FormData
       from: 'onboarding@resend.dev',
       to: 'artadvertising211@gmail.com',
       subject: `رسالة جديدة من موقع فن الإعلان - من ${name}`,
-      html: `
-        <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6;">
-          <h2>رسالة جديدة عبر موقعكم الإلكتروني</h2>
-          <p><strong>الاسم:</strong> ${name}</p>
-          <p><strong>رقم الجوال:</strong> ${phone}</p>
-          <p><strong>الرسالة:</strong></p>
-          <p>${message}</p>
-        </div>
-      `,
+      html: `<div dir="rtl"><h2>رسالة جديدة</h2><p>الاسم: ${name}</p><p>الجوال: ${phone}</p><p>الرسالة: ${message}</p></div>`,
     });
-    return { message: 'تم إرسال رسالتك بنجاح! سنتواصل معك قريبًا.', success: true, errors: {} };
+    return { message: 'تم الإرسال بنجاح!', success: true, errors: {} };
   } catch (error) {
-    console.error("Email sending error:", error);
-    return { message: 'عفوًا، حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.', success: false, errors: {} };
+    return { message: 'خطأ في الإرسال.', success: false, errors: {} };
   }
 }
 
-// Server Action for Chatbot
-export async function getGeminiResponse(prompt: string): Promise<string> {
-  const apiKey = process.env.GEMINI_API_KEY;
+/**
+ * Universal Gemini Caller - Switches between versions and models automatically
+ */
+export async function getGeminiResponse(userPrompt: string) {
+    const apiKey = (process.env.GOOGLE_GENERATIVE_AI_API_KEY || "").trim();
+    if (!apiKey) return "يا هلا بك! مفتاح الذكاء الاصطناعي مفقود.";
 
-  if (!apiKey || apiKey === "هنا تضع المفتاح الخاص بك") {
-    return "عفوًا، يبدو أن مفتاح API غير مفعّل. الرجاء تزويد المطور بالمفتاح الصحيح لتفعيل الخدمة.";
-  }
+    const systemContext = `أنت 'فن' مساعد مؤسسة فن الإعلان بالرياض. 
+    الأسعار: الحروف البارزة 350، الاستيكر 35، الأسوار 150-250، الكلادينج 160-280. 
+    تحدث بلهجة سعودية ودودة ومختصرة.`;
 
-  try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        systemInstruction: { parts: [{ text: "أنت مساعد ذكي اسمك 'فن' لموقع 'فن الإعلان'. تحدث باللهجة السعودية الودودة (مثل: هلا بك، أبشر، من عيوني، لا تشيل هم). وجه الزوار دائماً لطلب الخدمات عبر الإيميل admin@fan-alelan.com أو زيارة صفحة فيسبوك أو قوقل ماب. خلك سريع وبسيط ومحفز." }] }
-      })
-    });
+    // Strategy: Try multiple endpoints and models
+    const endpoints = [
+        `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+        `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${apiKey}`
+    ];
 
-    if (!response.ok) {
-      const errorData = await response.json();
-      console.error("Google API Error:", errorData);
-      return "معليش، واجهتني مشكلة في الاتصال بالذكاء الاصطناعي. جرب مرة ثانية.";
+    for (const url of endpoints) {
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: `${systemContext}\n\nالسؤال: ${userPrompt}` }] }]
+                })
+            });
+
+            const data = await response.json();
+            if (response.ok && data.candidates && data.candidates[0].content) {
+                return data.candidates[0].content.parts[0].text;
+            }
+        } catch (e) {
+            console.error(`Failed at ${url}`);
+        }
     }
 
-    const data = await response.json();
-    // Handle cases where the response might be empty or blocked
-    if (!data.candidates || data.candidates.length === 0 || !data.candidates[0].content) {
-        console.error("Invalid response structure from API:", data);
-        return "والله ما أدري وش أقول، عطني سؤال ثاني.";
-    }
-
-    return data.candidates[0].content.parts[0].text;
-
-  } catch (error) {
-    console.error("Server Action Error:", error);
-    return "معليش حصل خطأ فني في السيرفر، جرب تسألني بعد شوي!";
-  }
+    return "يا هلا بك! حالياً أواجه ضغط في النظام، تقدر تواصل معنا واتساب وأبشر بسعدك: 0557517792";
 }
