@@ -2,60 +2,51 @@ import type { Metadata } from "next";
 import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import NewChatbot from "@/components/NewChatbot";
 
 const notoKufiArabic = Noto_Kufi_Arabic({ 
   subsets: ["arabic"],
   weight: ['400', '700', '900'] 
 });
 
-// SEO-Optimized Metadata
+// Comprehensive SEO Metadata
 export const metadata: Metadata = {
   metadataBase: new URL("https://fan-alelan.com"),
-  title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية فاخرة بالرياض",
-  description: "فن الإعلان: شريكك الأول في الرياض لتصميم وتنفيذ واجهات الكلادينج الفاخرة، اللوحات الإعلانية المضيئة، والهياكل المعدنية. نجمع بين الإبداع، الجودة، والالتزام بتحويل رؤيتك إلى واقع ملموس يخطف الأنظار.",
+  title: {
+    default: "فن الإعلان للدعاية والإعلان | واجهات كلادينج ولوحات محلات بالرياض",
+    template: "%s | فن الإعلان بالرياض"
+  },
+  description: "فن الإعلان: متخصصون في تنفيذ واجهات الكلادينج الفاخرة، الحروف البارزة المضيئة، استيكرات السيارات، وأعمال الحديد بالليزر في كافة أحياء ومناطق الرياض. جودة تنفيذ بضمان 15 سنة.",
   keywords: [
-    // Core Services
-    'كلادينج', 'واجهات كلادينج', 'تركيب كلادينج', 'تلبيس كلادينج', 'كلادينج الرياض',
-    'لوحات إعلانية', 'لوحات محلات', 'حروف بارزة', 'لوحات مضيئة', 'لوحات LED',
-    // Secondary Services
-    'هياكل معدنية', 'هناجر', 'أسوار حماية', 'أعمال حديد', 'قص ليزر', 'أبواب حديد', 'درابزين', 'مظلات', 'سواتر',
-    'طباعة رقمية', 'بنر', 'فلكس', 'استيكر',
-    // Location-Based
-    'كلادينج في الرياض', 'لوحات إعلانية في الرياض', 'مقاول كلادينج الرياض', 'شركة لوحات بالرياض', 
-    'تصميم واجهات بالرياض', 'حداد في الرياض',
-    // Commercial & Long-Tail
-    'أفضل شركة كلادينج بالرياض', 'أسعار تركيب الكلادينج', 'تصميم لوحة محل تجاري', 
-    'شروط بلدية الرياض للوحات', 'مقاول واجهات', 'تجديد واجهة مبنى', 'لوحات حروف بارزة مضيئة',
-    'كلادينج خشبي', 'كلادينج ذهبي', 'لوحات زنكور',
-    // General
-    'مقاولات عامة', 'تصميم إعلاني', 'دعاية وإعلان', 'فن الإعلان للمقاولات'
+    'كلادينج الرياض', 'واجهات كلادينج', 'لوحات محلات الرياض', 'حروف بارزة مضيئة', 
+    'تصميم لوحات إعلانية', 'استيكرات سيارات الرياض', 'تغليف سيارات شركات', 
+    'أعمال حديد ليزر', 'شروط بلدية الرياض للوحات 2024', 'منصة بلدي لوحات',
+    'الواح الخليج كلادينج', 'عرب بوند الرياض', 'مقاولات دعاية وإعلان',
+    'حروف أكريليك', 'لوحات زنكور', 'مظلات وسواتر الرياض', 'قص ليزر حديد'
   ],
-  authors: [{ name: "فن الإعلان للمقاولات" }],
-  creator: "Gemini AI & Firebase",
-  publisher: "Firebase",
+  authors: [{ name: "فن الإعلان للدعاية والإعلان" }],
+  creator: "فن الإعلان",
+  publisher: "فن الإعلان للمقاولات",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   alternates: {
     canonical: '/',
-    languages: {
-      'ar-SA': '/',
-    },
   },
   openGraph: {
-    title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية فاخرة بالرياض",
-    description: "نحول رؤيتك إلى واقع. متخصصون في واجهات الكلادينج، اللوحات الإعلانية المضيئة، وأعمال الحديد التي تبرز علامتك التجارية في الرياض.",
+    title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية بالرياض",
+    description: "نحول رؤيتك إلى واقع. تنفيذ واجهات كلادينج ولوحات حروف بارزة في كل مناطق الرياض.",
     url: "https://fan-alelan.com",
-    siteName: "فن الإعلان للمقاولات",
+    siteName: "فن الإعلان",
     images: [
       {
-        url: "https://i.imgur.com/KQNa7oV.png", // Main Cladding Image
+        url: "https://i.imgur.com/KQNa7oV.png",
         width: 1200,
         height: 630,
-        alt: "واجهة فيلا فاخرة مغطاة بكلادينج عصري في الرياض",
-      },
-       {
-        url: "https://i.imgur.com/PtI1V0D.png", // Main Signage Image
-        width: 1200,
-        height: 630,
-        alt: "لوحة إعلانية مضيئة بحروف بارزة لمحل تجاري",
+        alt: "فن الإعلان للدعاية والإعلان",
       },
     ],
     locale: "ar_SA",
@@ -63,28 +54,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية فاخرة بالرياض",
+    title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية بالرياض",
     description: "متخصصون في تصميم وتنفيذ واجهات الكلادينج واللوحات الإعلانية بالرياض.",
-    creator: "@your-twitter-handle", // Add your Twitter handle
-    images: ["https://i.imgur.com/KQNa7oV.png"], 
+    images: ["https://i.imgur.com/KQNa7oV.png"],
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico' },
+    ],
     apple: '/apple-touch-icon.png',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   manifest: "/manifest.json",
 };
@@ -96,10 +75,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={notoKufiArabic.className}>
+      <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`}>
         <Header /> 
-        {children}
-        </body>
+        <div className="relative">
+          {children}
+        </div>
+        <Footer />
+        <NewChatbot />
+      </body>
     </html>
   );
 }

@@ -1,43 +1,33 @@
-import { MetadataRoute } from 'next'
-import { posts } from './lib/blog-data' // Assuming this is where your blog posts are
- 
-export default function sitemap(): MetadataRoute.Sitemap {
-  // Base static routes
-  const staticRoutes = [
-    {
-      url: 'https://fan-alelan.com',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
-    },
-    {
-      url: 'https://fan-alelan.com/gallery',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://fan-alelan.com/blog',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
-    },
-     {
-      url: 'https://fan-alelan.com/contact',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-  ]
+import { MetadataRoute } from 'next';
+import { services } from '@/lib/data';
+import { posts } from '@/lib/blog-data';
 
-  // Dynamic routes for blog posts
-  const postRoutes = posts.map((post) => ({
-    url: `https://fan-alelan.com/blog/${post.slug}`,
-    lastModified: new Date(), // You can use a post-specific date if you have one
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://fan-alelan.com';
+
+  // Core Pages
+  const routes = ['', '/services', '/gallery', '/blog'].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'daily' as const,
+    priority: 1.0,
+  }));
+
+  // Service Pages
+  const serviceUrls = services.map((s) => ({
+    url: `${baseUrl}/services/${s.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
+  // Blog Post Pages
+  const blogUrls = posts.map((p) => ({
+    url: `${baseUrl}/blog/${p.slug}`,
+    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
 
- 
-  return [...staticRoutes, ...postRoutes];
+  return [...routes, ...serviceUrls, ...blogUrls];
 }

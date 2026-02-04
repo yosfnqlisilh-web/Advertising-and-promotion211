@@ -1,14 +1,12 @@
-import { MetadataRoute } from 'next'
- 
-export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://fan-alelan.com'; // Replace with your actual domain
+import { MetadataRoute } from 'next';
 
+export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      // disallow: '/private/', // Example of disallowing a directory
+      disallow: '/private/',
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
-  }
+    sitemap: 'https://fan-alelan.com/sitemap.xml',
+  };
 }
