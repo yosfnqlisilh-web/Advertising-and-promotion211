@@ -13,18 +13,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Import data
-import { works, testimonials, faqs } from '../lib/data';
+import { works } from '../lib/data';
 
 // Import components and icons
-import { MailIcon, PhoneIcon, MapPinIcon, ArrowRightIcon } from "../components/icons";
+import { ArrowRightIcon } from "../components/icons";
 import RealWhatsAppIcon from "../components/SocialIcons/RealWhatsAppIcon";
 import RealGoogleMapsIcon from "../components/SocialIcons/RealGoogleMapsIcon";
 import RealEmailIcon from "../components/SocialIcons/RealEmailIcon";
 import RealPhoneIcon from "../components/SocialIcons/RealPhoneIcon";
 import WorkCard from "../components/WorkCard";
 import AnimatedSection from "../components/AnimatedSection";
-import TestimonialCard from "../components/TestimonialCard";
-import FaqItem from "../components/FaqItem";
 
 import { submitContactForm, FormState } from './actions';
 import './animations.css';
@@ -35,7 +33,7 @@ function RotatingWords() {
   useEffect(() => {
     const timer = setInterval(() => { setIndex((prevIndex) => (prevIndex + 1) % words.length); }, 1200);
     return () => clearInterval(timer);
-  }, []);
+  }, [words.length]);
   return (
     <div className="mt-8 h-10 flex items-center justify-center overflow-hidden font-sans">
       <div key={index} className="text-2xl sm:text-3xl font-bold tracking-widest bg-gold-gradient bg-clip-text text-transparent animate-in slide-in-from-bottom-4 duration-500">{words[index]}</div>

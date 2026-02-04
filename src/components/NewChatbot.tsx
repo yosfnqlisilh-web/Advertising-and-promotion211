@@ -104,6 +104,7 @@ const NewChatbot = () => {
             const newBotMsg: Message = { id: `b-r-${Date.now()}`, text: botResponse, sender: 'bot' };
             setMessages(prev => prev.map(m => m.id === loadingMsg.id ? newBotMsg : m));
         } catch (error) {
+            console.error("Chatbot send message error:", error);
             const errorMsg: Message = { id: loadingMsg.id, text: "يا هلا بك! حصل التماس بسيط، تواصل معنا واتساب!", sender: 'bot' };
             setMessages(prev => prev.map(m => m.id === loadingMsg.id ? errorMsg : m));
         }

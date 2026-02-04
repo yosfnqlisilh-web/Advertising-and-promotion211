@@ -5,7 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { services } from "@/lib/data";
 import AnimatedSection from "@/components/AnimatedSection";
-import { PhoneIcon, MailIcon, MapPinIcon } from "@/components/icons";
+import { PhoneIcon, MapPinIcon } from "@/components/icons";
 
 // Import Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,6 +14,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+
+interface TechnicalSpec {
+  label: string;
+  value: string;
+}
 
 export default function ServicePage({ params }: { params: { slug: string } }) {
   const service = services.find((s) => s.slug === params.slug);
@@ -69,7 +74,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <div className="space-y-6 bg-white/5 p-8 rounded-3xl border border-white/10 shadow-2xl">
               <h2 className="text-2xl font-bold text-yellow-500 mb-6">المواصفات الفنية والجودة:</h2>
               <div className="grid gap-6">
-                {service.technicalSpecs?.map((spec: any, idx: number) => (
+                {service.technicalSpecs?.map((spec: TechnicalSpec, idx: number) => (
                   <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/10 pb-4 last:border-0">
                     <span className="text-gray-400 font-medium mb-1 sm:mb-0">{spec.label}</span>
                     <span className="text-white font-bold text-lg">{spec.value}</span>

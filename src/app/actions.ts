@@ -10,6 +10,16 @@ const contactFormSchema = z.object({
   message: z.string().min(10, { message: 'الرسالة يجب أن تكون 10 أحرف على الأقل.' })
 });
 
+export interface FormState {
+    message: string;
+    errors?: {
+        name?: string[];
+        phone?: string[];
+        message?: string[];
+    };
+    success: boolean;
+}
+
 // Safe Resend Init
 const getResend = () => {
     const key = process.env.RESEND_API_KEY;
@@ -18,7 +28,7 @@ const getResend = () => {
 };
 
 // 2. دالة إرسال الإيميلات (Resend) - Updated to new destination email
-export async function submitContactForm(prevState: any, formData: FormData) {
+export async function submitContactForm(prevState: FormState, formData: FormData): Promise<FormState> {
   const resend = getResend();
   if (!resend) return { message: 'خدمة الإيميلات غير مفعلة.', success: false, errors: {} };
 
@@ -61,8 +71,13 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   }
 }
 
+interface GeminiModel {
+    name: string;
+    supportedGenerationMethods: string[];
+}
+
 // 3. دالة البوت الذكي (Gemini) - Fixed to prevent 404 and use stable models
-export async function getGeminiResponse(userPrompt: string) {
+export async function getGeminiResponse(userPrompt: string): Promise<string> {
     const apiKey = (process.env.GOOGLE_GENERATIVE_AI_API_KEY || "").trim();
     if (!apiKey) return "المفتاح مفقود.";
 
@@ -73,10 +88,10 @@ export async function getGeminiResponse(userPrompt: string) {
     try {
         const listRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
         const listData = await listRes.json();
-        const availableModels = listData.models || [];
+        const availableModels: GeminiModel[] = listData.models || [];
 
-        const targetModel = availableModels.find((m: any) => m.name.includes("gemini-1.5-flash") && m.supportedGenerationMethods.includes("generateContent"))
-                           || availableModels.find((m: any) => m.supportedGenerationMethods.includes("generateContent"));
+        const targetModel = availableModels.find((m) => m.name.includes("gemini-1.5-flash") && m.supportedGenerationMethods.includes("generateContent"))
+                           || availableModels.find((m) => m.supportedGenerationMethods.includes("generateContent"));
 
         if (!targetModel) return "يا هلا بك! جاري تحديث أنظمة الذكاء الاصطناعي، تواصل معنا واتساب وأبشر بسعدك.";
 
@@ -93,7 +108,8 @@ export async function getGeminiResponse(userPrompt: string) {
         
         return "معليش يا غالي، حصل عندي التماس بسيط، جرب تسألني بعد دقيقة.";
 
-    } catch (error: any) {
+    } catch (error) {
+        console.error(error);
         return "يا هلا بك! فيه مشكلة في الاتصال، كلمنا واتساب وأبشر باللي يرضيك.";
     }
 }
