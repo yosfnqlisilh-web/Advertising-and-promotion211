@@ -10,9 +10,11 @@ const notoKufiArabic = Noto_Kufi_Arabic({
   weight: ['400', '700', '900'] 
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://fan-alelan.com';
+
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fan-alelan.com"),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: "فن الإعلان للدعاية والإعلان | واجهات كلادينج ولوحات محلات بالرياض",
     template: "%s | فن الإعلان بالرياض"
@@ -39,11 +41,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية بالرياض",
     description: "نحول رؤيتك إلى واقع. تنفيذ واجهات كلادينج ولوحات حروف بارزة في كل مناطق الرياض.",
-    url: "https://fan-alelan.com",
+    url: BASE_URL,
     siteName: "فن الإعلان",
     images: [
       {
-        url: "https://i.imgur.com/KQNa7oV.png",
+        url: `${BASE_URL}/og-image.png`, // Using a local image
         width: 1200,
         height: 630,
         alt: "فن الإعلان للدعاية والإعلان",
@@ -56,16 +58,35 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية بالرياض",
     description: "متخصصون في تصميم وتنفيذ واجهات الكلادينج واللوحات الإعلانية بالرياض.",
-    images: ["https://i.imgur.com/KQNa7oV.png"],
+    images: [`${BASE_URL}/twitter-image.png`], // Using a local image
   },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico' },
+      { url: '/favicon.ico', sizes: 'any' },
     ],
     apple: '/apple-touch-icon.png',
   },
-  manifest: "/manifest.json",
+  manifest: `${BASE_URL}/manifest.json`,
+};
+
+// JSON-LD Structured Data
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'GeneralContractor',
+  name: 'فن الإعلان للمقاولات',
+  description: 'متخصصون في تنفيذ واجهات الكلادينج الفاخرة، الحروف البارزة المضيئة، وأعمال الدعاية والإعلان في الرياض.',
+  url: BASE_URL,
+  logo: `${BASE_URL}/logo.png`,
+  telephone: '+966557517792',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Riyadh',
+    addressCountry: 'SA'
+  },
+  sameAs: [
+    'https://www.facebook.com/profile.php?id=61587226595703'
+  ]
 };
 
 export default function RootLayout({
@@ -75,6 +96,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
+       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`}>
         <Header /> 
         <div className="relative">

@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Import data
-import { works } from '../lib/data';
+import { works, testimonials } from '../lib/data';
 
 // Import components and icons
 import { ArrowRightIcon } from "../components/icons";
@@ -48,6 +48,23 @@ function SubmitButton() {
       {pending ? 'جارٍ الإرسال...' : 'إرسال الرسالة الآن'}
     </button>
   );
+}
+
+function QuoteIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3v1"/>
+      <path d="M17 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3v1"/>
+    </svg>
+  )
+}
+
+function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
+    return (
+      <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 6 9 17l-5-5" />
+      </svg>
+    )
 }
 
 export default function Home() {
@@ -101,21 +118,83 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        {/* ABOUT SECTION */}
+        {/* ABOUT SECTION - REWRITTEN */}
         <AnimatedSection id="about-us" className="py-24 sm:py-32 bg-gray-800 text-right">
             <div className="container px-4">
-                <div className="grid lg:grid-cols-2 gap-20 items-center text-right">
-                    <div className="max-w-xl border-r-4 border-yellow-500 pr-8">
-                        <h2 className="text-5xl sm:text-6xl font-bold tracking-tight animated-gradient-text pb-4 leading-tight">خبرتنا في خدمتكم</h2>
-                        <p className="mt-8 text-xl text-gray-300 leading-relaxed font-bold italic underline underline-offset-8 decoration-yellow-500/20 mb-6">نخدم في كل أحياء ومناطق الرياض</p>
-                        <p className="mt-6 text-xl text-gray-300 leading-relaxed font-medium">نحول الرؤية إلى واقع فني يبرز هوية مشروعك التجاري بأفضل جودة.</p>
+                <div className="grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <h2 className="text-5xl sm:text-6xl font-bold tracking-tight animated-gradient-text pb-4 leading-tight">لماذا تختار فن الإعلان؟</h2>
+                        <p className="mt-6 text-xl text-gray-300 leading-relaxed">
+                            لأكثر من 15 عاماً، ونحن في فن الإعلان نحول الأفكار إلى واقع ملموس يترك بصمة في شوارع الرياض. نحن لسنا مجرد منفذين، بل شركاء نجاح نضع خبرتنا بين يديك لضمان تحقيق أفضل النتائج.
+                        </p>
+                        <div className="mt-12 space-y-8">
+                            <div className="flex items-start gap-5">
+                                <div className="mt-1 w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-full bg-yellow-500/10 text-yellow-500"><CheckIcon className="w-6 h-6"/></div>
+                                <div>
+                                    <h3 className="text-2xl font-bold text-white">جودة لا تقبل المساومة</h3>
+                                    <p className="text-gray-400 mt-2 text-lg">نستخدم أجود المواد الخام من كلادينج وأكريليك ومصادر موثوقة ونتبع أدق معايير الصناعة.</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-5">
+                                <div className="mt-1 w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-full bg-yellow-500/10 text-yellow-500"><CheckIcon className="w-6 h-6"/></div>
+                                <div>
+                                    <h3 className="text-2xl font-bold text-white">فريق من الخبراء</h3>
+                                    <p className="text-gray-400 mt-2 text-lg">مصممون، فنيون، وحدادون يعملون بتناغم لإنجاز مشروعك على أكمل وجه ممكن.</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-5">
+                                <div className="mt-1 w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-full bg-yellow-500/10 text-yellow-500"><CheckIcon className="w-6 h-6"/></div>
+                                <div>
+                                    <h3 className="text-2xl font-bold text-white">ضمان يريح بالك</h3>
+                                    <p className="text-gray-400 mt-2 text-lg">نقدم ضمانات حقيقية على أعمالنا تصل إلى 15 عاماً على الكلادينج وسنتين على الإضاءة.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-                        <Image src="https://i.imgur.com/8eTDB7o.png" layout="fill" objectFit="cover" alt="فريق عمل فن الإعلان" className="transform scale-105" />
+                    <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
+                        <Image src="https://i.imgur.com/8eTDB7o.png" layout="fill" objectFit="cover" alt="فريق عمل فن الإعلان" className="group-hover:scale-105 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     </div>
                 </div>
             </div>
+        </AnimatedSection>
+
+        {/* TESTIMONIALS SECTION - NEW */}
+        <AnimatedSection id="testimonials" className="py-24 sm:py-32 bg-gray-900 overflow-hidden">
+          <div className="container">
+            <div className="text-center max-w-4xl mx-auto mb-20">
+              <h2 className="text-5xl sm:text-6xl font-bold tracking-tight animated-gradient-text pb-4">ماذا يقول عملاؤنا عنا؟</h2>
+              <p className="mt-6 text-xl text-gray-400 font-medium">آراء نعتز بها وتدفعنا لتقديم الأفضل دائماً.</p>
+            </div>
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              spaceBetween={30}
+              slidesPerView={1}
+              breakpoints={{ 640: { slidesPerView: 2 }, 1280: { slidesPerView: 3 } }}
+              autoplay={{ delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true }}
+              pagination={{ clickable: true, el: '.swiper-pagination' }}
+              className="testimonials-swiper pb-20"
+            >
+              {testimonials.map((testimonial, index) => (
+                <SwiperSlide key={index} className="h-auto">
+                  <div className="bg-gray-800/50 rounded-3xl p-8 h-full flex flex-col border border-white/10 transform hover:border-yellow-500/50 transition-colors duration-300 hover:-translate-y-2">
+                    <QuoteIcon className="w-10 h-10 text-yellow-500/30" />
+                    <p className="mt-6 text-lg text-gray-300 leading-relaxed flex-grow">{testimonial.text}</p>
+                    <div className="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+                      <div>
+                        <p className="font-bold text-lg text-white">{testimonial.name}</p>
+                        <p className="text-sm text-gray-400">{testimonial.title}</p>
+                      </div>
+                      <div className="capitalize text-xs font-bold text-gray-500 bg-black/30 px-3 py-1 rounded-full">
+                        {testimonial.platform}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+                <div className="swiper-pagination"></div>
+            </Swiper>
+          </div>
         </AnimatedSection>
 
         {/* CONTACT SECTION */}

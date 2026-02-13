@@ -27,3 +27,5 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
+// Restarting server to load new .env.local variables

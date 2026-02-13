@@ -2,14 +2,182 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { getGeminiResponse } from '@/app/actions';
+import * as THREE from 'three';
 
-interface Message {
-    id: string;
-    text: string;
-    sender: 'user' | 'bot';
-    loading?: boolean;
-}
+// Define the Message type
+type Message = {
+  id: string;
+  text: string;
+  sender: 'user' | 'bot';
+  loading?: boolean;
+};
 
+
+// --- 3D Icon Component ---
+const ChatbotIcon = () => {
+    const mountRef = useRef<HTMLDivElement>(null);
+    const isBlinking = useRef(false);
+    const blinkStep = useRef(0);
+
+    useEffect(() => {
+        if (!mountRef.current) return;
+
+        const currentMount = mountRef.current;
+
+        // --- Basic Scene Setup ---
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(45, currentMount.clientWidth / currentMount.clientHeight, 0.1, 1000);
+        camera.position.z = 7;
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        currentMount.appendChild(renderer.domElement);
+
+        // --- Lighting (FURTHER ENHANCED) ---
+        const ambLight = new THREE.AmbientLight(0xffffff, 1.5);
+        scene.add(ambLight);
+        const studioLight = new THREE.DirectionalLight(0xffffff, 2.5);
+        studioLight.position.set(5, 5, 5);
+        scene.add(studioLight);
+        const topLight = new THREE.PointLight(0xffffff, 1.0, 20);
+        topLight.position.set(0, 5, 0);
+        scene.add(topLight);
+        const pointLight = new THREE.PointLight(0xff9900, 5.0, 18); // Increased intensity and range
+        pointLight.position.set(2, 2, 4);
+        scene.add(pointLight);
+
+        // --- Robot Model (ENHANCED GLOW) ---
+        const headGroup = new THREE.Group();
+        scene.add(headGroup);
+
+        const headMat = new THREE.MeshStandardMaterial({
+            color: 0xff7700,
+            roughness: 0.1,
+            metalness: 0.7,
+            emissive: 0xaa5500, // Brighter emissive color
+            emissiveIntensity: 0.4 // Increased emissive intensity
+        });
+        const head = new THREE.Mesh(new THREE.SphereGeometry(1.5, 64, 64), headMat);
+        headGroup.add(head);
+
+        const visorMat = new THREE.MeshStandardMaterial({
+            color: 0x111111,
+            roughness: 0.02,
+            metalness: 1.0
+        });
+        const visor = new THREE.Mesh(new THREE.SphereGeometry(1.51, 64, 64, 0, Math.PI * 2, 0, Math.PI * 0.32), visorMat);
+        visor.rotation.x = Math.PI * 0.54;
+        headGroup.add(visor);
+
+        const faceGroup = new THREE.Group();
+        headGroup.add(faceGroup);
+
+        const eyeMat = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
+        const leftEye = new THREE.Mesh(new THREE.CircleGeometry(0.18, 32), eyeMat);
+        leftEye.position.set(-0.45, 0.35, 1.45);
+        faceGroup.add(leftEye);
+
+        const rightEye = leftEye.clone();
+        rightEye.position.x = 0.45;
+        faceGroup.add(rightEye);
+
+        const mouth = new THREE.Mesh(new THREE.RingGeometry(0.28, 0.35, 64, 1, 0, Math.PI), new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide }));
+        mouth.position.set(0, -0.38, 1.47);
+        mouth.rotation.set(0.2, Math.PI, Math.PI);
+        faceGroup.add(mouth);
+
+        const accessoryMat = new THREE.MeshStandardMaterial({ color: 0x1a1a1a, metalness: 0.8, roughness: 0.1 });
+        const earGeo = new THREE.CylinderGeometry(0.4, 0.45, 0.2, 32);
+        const lEar = new THREE.Mesh(earGeo, accessoryMat);
+        lEar.rotation.z = Math.PI / 2;
+        lEar.position.set(-1.55, 0, 0);
+        headGroup.add(lEar);
+        const rEar = lEar.clone();
+        rEar.position.x = 1.55;
+        headGroup.add(rEar);
+
+        // --- Blinking Logic ---
+        const scheduleBlink = () => {
+            const nextBlink = Math.random() * 4000 + 2000;
+            setTimeout(() => {
+                isBlinking.current = true;
+                blinkStep.current = 0;
+                scheduleBlink();
+            }, nextBlink);
+        };
+        scheduleBlink();
+        
+        // --- Mouse Interaction ---
+        const mouse = new THREE.Vector2();
+        const targetRotation = new THREE.Vector2();
+        const onMouseMove = (event: MouseEvent) => {
+            const rect = renderer.domElement.getBoundingClientRect();
+            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+            
+            // Clamp the rotation to prevent full spins and distortion
+            const maxRotationY = Math.PI / 2; // 90 degrees left/right
+            const maxRotationX = Math.PI / 3; // 60 degrees up/down
+
+            targetRotation.y = THREE.MathUtils.clamp(mouse.x * 0.45, -maxRotationY, maxRotationY);
+            targetRotation.x = THREE.MathUtils.clamp(-mouse.y * 0.25, -maxRotationX, maxRotationX);
+        };
+        window.addEventListener('mousemove', onMouseMove);
+
+        // --- Animation Loop ---
+        let time = 0;
+        const animate = () => {
+            requestAnimationFrame(animate);
+            time += 0.05;
+
+            headGroup.position.y = Math.sin(time * 0.6) * 0.12;
+            headGroup.rotation.y += (targetRotation.y - headGroup.rotation.y) * 0.08;
+            headGroup.rotation.x += (targetRotation.x - headGroup.rotation.x) * 0.08;
+            headGroup.rotation.z = Math.sin(time * 0.4) * 0.03;
+
+            faceGroup.position.x = mouse.x * 0.025;
+            faceGroup.position.y = mouse.y * 0.025;
+            
+            if (isBlinking.current) {
+                blinkStep.current += 0.25;
+                const scale = 1 - Math.abs(Math.sin(blinkStep.current * Math.PI));
+                leftEye.scale.y = scale < 0.1 ? 0.01 : scale;
+                rightEye.scale.y = scale < 0.1 ? 0.01 : scale;
+                if (blinkStep.current >= 1) {
+                    isBlinking.current = false;
+                    leftEye.scale.y = 1;
+                    rightEye.scale.y = 1;
+                }
+            }
+            
+            renderer.render(scene, camera);
+        };
+        animate();
+
+        // --- Resize Handling ---
+        const handleResize = () => {
+            const { clientWidth, clientHeight } = currentMount;
+            camera.aspect = clientWidth / clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(clientWidth, clientHeight);
+        };
+        const resizeObserver = new ResizeObserver(handleResize);
+        resizeObserver.observe(currentMount);
+
+        // --- Cleanup ---
+        return () => {
+            window.removeEventListener('mousemove', onMouseMove);
+            resizeObserver.unobserve(currentMount);
+            currentMount.removeChild(renderer.domElement);
+        };
+    }, []);
+
+    return <div ref={mountRef} className="w-full h-full" />;
+};
+
+
+// --- Main Chatbot Component ---
 const NewChatbot = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isChatOpen, setIsChatOpen] = useState(false);
@@ -17,11 +185,6 @@ const NewChatbot = () => {
         { id: 'initial', text: 'يا هلا بك! أنا فن، خبيرك في الكلادينج واللوحات. آمرني وش بغيت تسأل عنه؟ أبشر بسعدك!', sender: 'bot' }
     ]);
     const [inputValue, setInputValue] = useState('');
-    const [isBlinking, setIsBlinking] = useState(false);
-    const [isMouthOpen, setIsMouthOpen] = useState(false);
-    const [isSuperJumping, setIsSuperJumping] = useState(false); 
-    const [lookUp, setLookUp] = useState(false);
-    
     const [hintIndex, setHintIndex] = useState(0);
     const hints = [
         { text: "عندك استفسار؟ اسألني هنا! ✨", btn: "اسأل فن 🦾", link: null },
@@ -29,8 +192,6 @@ const NewChatbot = () => {
         { text: "موقعنا على الخريطة 📍", btn: "الخريطة", link: "https://share.google/yok3tFEnIDCu8AZbY" },
         { text: "تابع جديد أعمالنا! 👍", btn: "فيسبوك", link: "https://www.facebook.com/profile.php?id=61587226595703" }
     ];
-
-    const eyesRef = useRef<HTMLDivElement>(null);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -38,57 +199,18 @@ const NewChatbot = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    useEffect(() => { messagesEndRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages]);
+    useEffect(() => {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [messages]);
 
     useEffect(() => {
         if (!isChatOpen && isVisible) {
             const timer = setInterval(() => {
-                setHintIndex((prev) => {
-                    const next = (prev + 1) % hints.length;
-                    if (next === 0) triggerRocketJump();
-                    return next;
-                });
+                setHintIndex((prev) => (prev + 1) % hints.length);
             }, 3000);
             return () => clearInterval(timer);
         }
     }, [isChatOpen, hints.length, isVisible]);
-
-    const triggerRocketJump = () => {
-        setLookUp(true); 
-        setTimeout(() => {
-            setIsSuperJumping(true);
-            setTimeout(() => {
-                setIsSuperJumping(false);
-                setLookUp(false);
-            }, 400);
-        }, 150);
-    };
-
-    useEffect(() => {
-        const handleMouseMove = (e: MouseEvent) => {
-            if (!eyesRef.current || isChatOpen || lookUp) return;
-            const { clientX, clientY } = e;
-            const eyeRect = eyesRef.current.getBoundingClientRect();
-            const eyeCenterX = eyeRect.left + eyeRect.width / 2;
-            const eyeCenterY = eyeRect.top + eyeRect.height / 2;
-            const angle = Math.atan2(clientY - eyeCenterY, clientX - eyeCenterX);
-            eyesRef.current.style.transform = `translate(${Math.cos(angle) * 5}px, ${Math.sin(angle) * 5}px)`;
-        };
-        window.addEventListener('mousemove', handleMouseMove);
-        return () => window.removeEventListener('mousemove', handleMouseMove);
-    }, [isChatOpen, lookUp]);
-
-    useEffect(() => {
-        if (lookUp && eyesRef.current) {
-            eyesRef.current.style.transform = `translateY(-8px) scaleY(0.6)`;
-        }
-    }, [lookUp]);
-
-    useEffect(() => {
-        const blinkInterval = setInterval(() => { if (!isChatOpen) { setIsBlinking(true); setTimeout(() => setIsBlinking(false), 200); } }, 3000);
-        const mouthInterval = setInterval(() => { if (!isChatOpen) { setIsMouthOpen(true); setTimeout(() => setIsMouthOpen(false), 400); } }, 4500);
-        return () => { clearInterval(blinkInterval); clearInterval(mouthInterval); };
-    }, [isChatOpen]);
 
     const toggleChat = () => setIsChatOpen(!isChatOpen);
     
@@ -113,11 +235,9 @@ const NewChatbot = () => {
     if (!isVisible) return null;
 
     return (
-        <div className={`fixed bottom-4 right-4 sm:bottom-8 sm:right-8 flex flex-col items-center z-[9999] transition-all cubic-bezier(0.34, 1.56, 0.64, 1) ${isSuperJumping ? 'translate-y-[-500px] opacity-0 scale-75 duration-300' : 'translate-y-0 opacity-100 scale-100 duration-500'}`}>
-            
-            {/* MINI HINT BUBBLE FOR MOBILE */}
+        <div className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 flex flex-col items-center z-[9999]">
             {!isChatOpen && (
-                <div className="mb-2 bg-[#1a1b1e]/95 backdrop-blur-xl border border-[#ff9000]/40 p-2 sm:p-3 rounded-xl rounded-br-none shadow-2xl max-w-[120px] sm:max-w-[160px] text-center transform translate-x-[-2%]">
+                <div className="mb-2 bg-[#1a1b1e]/95 backdrop-blur-xl border border-[#ff9000]/40 p-2 sm:p-3 rounded-xl rounded-br-none shadow-2xl max-w-[120px] sm:max-w-[160px] text-center">
                     <div key={hintIndex} className="animate-in fade-in zoom-in-95 duration-500">
                         <p className="text-white text-[9px] sm:text-xs leading-tight mb-1.5 font-bold">{hints[hintIndex].text}</p>
                         {hints[hintIndex].link ? (
@@ -154,14 +274,9 @@ const NewChatbot = () => {
                 </div>
             )}
             
-            {/* MINI BOT FOR MOBILE */}
             {!isChatOpen && (
-                <button onClick={toggleChat} className="group relative w-12 h-12 sm:w-18 sm:h-18 bg-[#ff9000] rounded-full bot-glow flex items-center justify-center transition-all hover:scale-110 active:scale-95 shadow-2xl">
-                    <div className="bot-character scale-75 sm:scale-100">
-                        <div className="eyebrows-container"><div className="eyebrow"></div><div className="eyebrow"></div></div>
-                        <div ref={eyesRef} className={`eyes-container ${isBlinking ? 'blink' : ''}`}><div className="eye"></div><div className="eye"></div></div>
-                        <div className={`mouth ${isMouthOpen ? 'mouth-open' : ''}`}></div>
-                    </div>
+                <button onClick={toggleChat} className="group relative w-24 h-24 transition-all hover:scale-110 active:scale-95">
+                    <ChatbotIcon />
                 </button>
             )}
         </div>
