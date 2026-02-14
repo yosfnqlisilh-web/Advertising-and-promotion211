@@ -1,8 +1,8 @@
-
 run:
   build: npm run build
   start: npm run start
-
 env:
   - variable: RESEND_API_KEY
     secret: RESEND_API_KEY
+    availability:
+      - RUNTIME
