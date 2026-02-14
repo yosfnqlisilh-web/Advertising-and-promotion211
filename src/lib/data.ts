@@ -1,3 +1,4 @@
+
 export const services = [
   { 
     slug: "cladding-facades",
@@ -44,6 +45,28 @@ export const services = [
     images: ["https://i.imgur.com/EzNhASb.jpg", "https://i.imgur.com/zWUhCEc.jpg", "https://i.imgur.com/89CDMkW.png", "https://i.imgur.com/T4dGKwQ.png"] 
   },
   {
+    slug: "promotional-fences",
+    title: "أسوار إعلانية ودعائية",
+    subtitles: ["أسوار مواقع", "حواجز مشاريع", "تغطية مؤقتة"],
+    description: "بناء أسوار وحواجز إعلانية للمشاريع تحت الإنشاء والأراضي، لتحقيق الاستفادة الإعلانية والحماية.",
+    longDescription: "حوّل موقع مشروعك أو أرضك إلى منصة إعلانية فعالة مع خدمة تصميم وتنفيذ الأسوار الإعلانية. نحن نقدم حلولاً متكاملة لإنشاء حواجز معدنية أو خشبية مؤقتة، وتغطيتها بلوحات إعلانية جذابة تعكس هوية مشروعك أو تصل برسالة مباشرة للجمهور. هذه الأسوار لا تخدم فقط كأداة تسويقية قوية، بل توفر أيضاً الحماية والخصوصية اللازمة للموقع، مع الالتزام التام بمعايير السلامة ومتطلبات الأمانة.",
+    features: [
+        "استغلال مثالي لمساحة الموقع الخارجية للدعاية.",
+        "هياكل معدنية قوية تضمن الثبات والأمان.",
+        "طباعة عالية الجودة مقاومة للعوامل الجوية.",
+        "تصاميم مخصصة تتوافق مع هوية المشروع.",
+        "تركيب سريع ومتوافق مع معايير السلامة في المواقع."
+    ],
+    technicalSpecs: [
+        { label: "نوع الهيكل", value: "تيوبات حديد وطنية مع قواعد تثبيت." },
+        { label: "مادة التغطية", value: "لوحات شينكو، خشب OSB، أو بنر مشدود." },
+        { label: "نوع الطباعة", value: "بنر كوري أو استيكر خارجي مع طبقة حماية." },
+        { label: "الأبعاد", value: "تنفيذ بأي ارتفاع أو طول مطلوب حسب الموقع." },
+        { label: "التثبيت", value: "تثبيت مباشر على الأرض أو باستخدام قواعد خرسانية." }
+    ],
+    images: ["https://i.imgur.com/JUiqIBd.png", "https://i.imgur.com/GgePb8P.png", "https://i.imgur.com/f07CxyZ.png", "https://i.imgur.com/uMTqBYi.jpg"]
+  },
+  {
     slug: "car-stickers",
     title: "استيكرات السيارات",
     subtitles: ["تغليف كامل", "شعارات", "سيارات شركات"],
@@ -64,28 +87,6 @@ export const services = [
         { label: "العمر الافتراضي", value: "يدوم من 3 إلى 5 سنوات حسب نوع الخامة." }
     ],
     images: ["https://i.imgur.com/lb2mfJ6.png", "https://i.imgur.com/dMKdaQC.png", "https://i.imgur.com/jFDHpA0.png"]
-  },
-  { 
-    slug: "metal-structures",
-    title: "هياكل معدنية", 
-    subtitles: ["لوحات عملاقه", "اسوار حمايه", "هناجر"], 
-    description: "بناء أسوار دعائية بهياكل معدنية متنوعة، مصممة خصيصًا لتتناسب مع متطلبات المشروع وميزانيته.", 
-    longDescription: "متخصصون في تصميم وبناء الهياكل المعدنية المعقدة والأسوار الدعائية العملاقة. نوفر حلولاً هندسية للمشاريع الإنشائية والدعائية الكبرى. يمكنك دمج هذه الهياكل مع <a href='/services/advertising-signs' class='text-yellow-500 underline'>اللوحات الإعلانية</a> الضخمة لتحقيق أقصى تأثير.",
-    features: [
-        "بناء أسوار دعائية (Unipole) و (Megacom).",
-        "تصميم وتنفيذ الهناجر والمستودعات المعدنية.",
-        "استخدام حديد عالي المتانة ومعالج ضد التآكل.",
-        "إشراف هندسي دقيق على كافة مراحل التركيب.",
-        "سرعة في التنفيذ مع الالتزام بمعايير السلامة العالمية."
-    ],
-    technicalSpecs: [
-        { label: "نوع الحديد", value: "حديد سابك وطني بمقاسات هندسية دقيقة." },
-        { label: "اللحام", value: "لحام CO2 احترافي لضمان أقصى درجات التماسك." },
-        { label: "الحماية", value: "دهان أساس برايمر ثم دهان نهائي ناري أو إيبوكسي." },
-        { label: "التثبيت", value: "قواعد خرسانية مسلحة وجوايط تثبيت عالية القوة." },
-        { label: "التحمل", value: "تصميم هندسي يتحمل سرعة رياح تصل لـ 140 كم/ساعة." }
-    ],
-    images: ["https://i.imgur.com/JUiqIBd.png", "https://i.imgur.com/uMTqBYi.jpg", "https://i.imgur.com/f07CxyZ.png", "https://i.imgur.com/GgePb8P.png"] 
   },
   { 
     slug: "digital-printing",
@@ -112,7 +113,7 @@ export const services = [
   { 
     slug: "iron-works",
     title: "أعمال الحديد", 
-    subtitles: ["قص ليزر", "أبواب", "درابزين", "مضلات", "سواتر", "اسقف الاحواش"], 
+    subtitles: ["قص ليزر", "أبواب", "درابزين", "مضلات", "سواتر"], 
     description: "تصنيع وتركيب المظلات والسواتر، الهياكل المعدنية، وأعمال الحدادة المساندة لمشاريع الدعاية.", 
     longDescription: "فريقنا من الحدادين المهرة ينفذ كافة أعمال الحدادة الفنية والمعمارية. نوفر أعمال حدادة مساندة لتركيب <a href='/services/cladding-facades' class='text-yellow-500 underline'>واجهات الكلادينج</a> واللوحات الضخمة. نقدم عملاً يجمع بين الأمان والجمال.",
     features: [
@@ -173,7 +174,7 @@ export const services = [
         { label: "التجهيزات", value: "شاشات عرض، أرفف زجاجية، كاونترات استقبال." },
         { label: "التسليم", value: "تسليم وتركيب في موقع المعرض بالرياض." }
     ],
-    images: ["https://i.imgur.com/D0i835D.png", "https://i.imgur.com/tG3a2n5.png", "https://i.imgur.com/3flS7R1.png"] 
+    images: ["https://i.imgur.com/Vqh88Be.png", "https://i.imgur.com/DTpll7M.png", "https://i.imgur.com/xN8siqU.png", "https://i.imgur.com/D0i835D.png", "https://i.imgur.com/tG3a2n5.png"] 
   }
 ];
 
@@ -200,6 +201,9 @@ export const works = [
   { title: "عمل من قسم أعمال الحديد", category: "أعمال الحديد", imgSrc: "https://i.imgur.com/1wYNwDo.png", description: "أحد أعمالنا المميزة في أعمال الحديد، يعكس الجودة والدقة في التنفيذ." },
   { title: "عمل من قسم صيانة وترميم", category: "صيانة وترميم", imgSrc: "https://i.imgur.com/65dxBTN.png", description: "أحد أعمالنا المميزة في صيانة وترميم، يعكس الجودة والدقة في التنفيذ." },
   { title: "عمل من قسم صيانة وترميم", category: "صيانة وترميم", imgSrc: "https://i.imgur.com/L8IwtO5.png", description: "أحد أعمالنا المميزة في صيانة وترميم، يعكس الجودة والدقة في التنفيذ." },
+  { title: "بوث عرض في معرض", category: "تصميم وتنفيذ البوثات", imgSrc: "https://i.imgur.com/Vqh88Be.png", description: "تصميم وتنفيذ بوث عرض تفاعلي وجذاب للمشاركة في المعارض التجارية." },
+  { title: "كشك تجاري مبتكر", category: "تصميم وتنفيذ البوثات", imgSrc: "https://i.imgur.com/DTpll7M.png", description: "كشك تجاري مصمم خصيصاً لعرض المنتجات بطريقة مبتكرة وعصرية." },
+  { title: "ستاند عرض منتجات", category: "تصميم وتنفيذ البوثات", imgSrc: "https://i.imgur.com/xN8siqU.png", description: "ستاند عرض عملي وأنيق لإبراز المنتجات وجذب انتباه العملاء." }
 ];
 
 export const testimonials = [
