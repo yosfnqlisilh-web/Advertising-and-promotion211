@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Kufi_Arabic } from "next/font/google";
+import Script from 'next/script';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -101,6 +102,17 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Google tag (gtag.js) */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-5VHBDX5V7W"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-5VHBDX5V7W');
+          `}
+        </Script>
       </head>
       <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`}>
         <Header /> 
