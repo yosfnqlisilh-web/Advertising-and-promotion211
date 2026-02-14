@@ -6,3 +6,7 @@ env:
     secret: RESEND_API_KEY
     availability:
       - RUNTIME
+  - variable: GOOGLE_GENERATIVE_AI_API_KEY
+    secret: GOOGLE_GENERATIVE_AI_API_KEY
+    availability:
+      - RUNTIME
