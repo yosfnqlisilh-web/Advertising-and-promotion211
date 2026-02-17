@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     siteName: "فن الإعلان",
     images: [
       {
-        url: `${BASE_URL}/og-image.png`, // Using a local image
-        width: 1200,
-        height: 630,
-        alt: "فن الإعلان للدعاية والإعلان",
+        url: `${BASE_URL}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
+        alt: "شعار فن الإعلان للدعاية والإعلان",
       },
     ],
     locale: "ar_SA",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "فن الإعلان | واجهات كلادينج ولوحات إعلانية بالرياض",
     description: "متخصصون في تصميم وتنفيذ واجهات الكلادينج واللوحات الإعلانية بالرياض.",
-    images: [`${BASE_URL}/twitter-image.png`], // Using a local image
+    images: [`${BASE_URL}/android-chrome-512x512.png`],
   },
   icons: {
     icon: '/favicon.svg',
