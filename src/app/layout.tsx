@@ -62,10 +62,7 @@ export const metadata: Metadata = {
     images: [`${BASE_URL}/twitter-image.png`], // Using a local image
   },
   icons: {
-    icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', sizes: 'any' },
-    ],
+    icon: '/favicon.svg',
     apple: '/apple-touch-icon.png',
   },
   manifest: `${BASE_URL}/manifest.json`,
@@ -78,7 +75,7 @@ const jsonLd = {
   name: 'فن الإعلان للمقاولات',
   description: 'متخصصون في تنفيذ واجهات الكلادينج الفاخرة، الحروف البارزة المضيئة، وأعمال الدعاية والإعلان في الرياض.',
   url: BASE_URL,
-  logo: `${BASE_URL}/logo.png`,
+  logo: `${BASE_URL}/apple-touch-icon.png`,
   telephone: '+966557517792',
   address: {
     '@type': 'PostalAddress',
@@ -97,12 +94,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-       <head>
-        <script
+      <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`}>
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Google tag (gtag.js) */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-5VHBDX5V7W"></Script>
         <Script id="google-analytics">
           {`
@@ -113,8 +109,6 @@ export default function RootLayout({
             gtag('config', 'G-5VHBDX5V7W');
           `}
         </Script>
-      </head>
-      <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`}>
         <Header /> 
         <div className="relative">
           {children}
