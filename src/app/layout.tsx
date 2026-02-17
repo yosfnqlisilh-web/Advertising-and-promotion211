@@ -96,6 +96,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`}>
         <Script
+          id="json-ld-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
