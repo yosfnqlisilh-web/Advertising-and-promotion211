@@ -48,17 +48,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       {/* Article Content */}
       <main className="container mx-auto px-4 py-12 text-right font-sans" dir="rtl">
         <div className="max-w-5xl mx-auto">
-            <AnimatedSection id="post-content">
-                 <div
-                    className="prose prose-invert prose-lg sm:prose-xl max-w-none text-gray-300 leading-relaxed
-                    prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:text-yellow-400 prose-h2:font-black prose-h2:border-r-4 prose-h2:border-yellow-500 prose-h2:pr-6
-                    prose-a:text-yellow-500 prose-a:font-bold prose-a:no-underline hover:prose-a:underline
-                    prose-strong:text-white prose-strong:font-black
-                    prose-img:rounded-[1.5rem] sm:prose-img:rounded-[2.5rem] prose-img:shadow-2xl prose-img:border prose-img:border-white/10
-                    "
-                    dangerouslySetInnerHTML={{ __html: post.content }}
-                 />
-             </AnimatedSection>
+            {/* Removed the AnimatedSection wrapper from here */}
+             <div
+                className="prose prose-invert prose-lg sm:prose-xl max-w-none text-gray-300 leading-relaxed
+                prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:text-yellow-400 prose-h2:font-black prose-h2:border-r-4 prose-h2:border-yellow-500 prose-h2:pr-6
+                prose-a:text-yellow-500 prose-a:font-bold prose-a:no-underline hover:prose-a:underline
+                prose-strong:text-white prose-strong:font-black
+                prose-img:rounded-[1.5rem] sm:prose-img:rounded-[2.5rem] prose-img:shadow-2xl prose-img:border prose-img:border-white/10
+                "
+                dangerouslySetInnerHTML={{ __html: post.content }}
+             />
 
              {/* Bottom Navigation */}
              <AnimatedSection id="back-to-blog" className="mt-20 pt-10 border-t border-white/5">

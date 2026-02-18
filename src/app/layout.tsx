@@ -94,7 +94,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`}>
+      <body className={`${notoKufiArabic.className} bg-gray-900 overflow-x-hidden`} suppressHydrationWarning={true}>
         <Script
           id="json-ld-data"
           type="application/ld+json"
