@@ -1,6 +1,6 @@
-
 import { MetadataRoute } from 'next';
-import { services, blogPosts } from '@/lib/data';
+import { posts as blogPosts } from '@/lib/blog-data'; // Corrected import for blog posts
+import { services } from '@/lib/data'; // Assuming services are still here, will verify
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://fan-alelan.com';
 
