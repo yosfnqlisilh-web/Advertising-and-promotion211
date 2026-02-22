@@ -1,12 +1,5 @@
 run:
   build: npm run build
-  start: npm run start
-env:
-  - variable: RESEND_API_KEY
-    secret: RESEND_API_KEY
-    availability:
-      - RUNTIME
-  - variable: GOOGLE_GENERATIVE_AI_API_KEY
-    secret: GOOGLE_GENERATIVE_AI_API_KEY
-    availability:
-      - RUNTIME
+  start: npm start
+secretEnv:
+  - secret: RESEND_API_KEY
