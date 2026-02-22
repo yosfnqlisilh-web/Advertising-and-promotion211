@@ -3,3 +3,4 @@ run:
   start: npm start
 secretEnv:
   - secret: RESEND_API_KEY
+  - secret: GOOGLE_GENERATIVE_AI_API_KEY
