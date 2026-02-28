@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Noto_Kufi_Arabic } from "next/font/google";
 import Script from 'next/script';
+import dynamic from 'next/dynamic'; // Import dynamic
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import NewChatbot from "@/components/NewChatbot";
-import BackToTopButton from "@/components/BackToTopButton"; // Import the new component
+import BackToTopButton from "@/components/BackToTopButton";
+
+// Dynamically import NewChatbot with SSR turned off
+const NewChatbot = dynamic(() => import('@/components/NewChatbot'), { ssr: false });
 
 const notoKufiArabic = Noto_Kufi_Arabic({ 
   subsets: ["arabic"],

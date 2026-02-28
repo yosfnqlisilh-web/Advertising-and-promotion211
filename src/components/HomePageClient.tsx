@@ -215,17 +215,17 @@ export default function HomePageClient() {
                     <form action={dispatch} className="space-y-8">
                         <div className="grid sm:grid-cols-2 gap-8">
                             <div className="space-y-2">
-                                <label className="text-sm font-bold text-gray-500 mr-2 uppercase tracking-widest">الاسم الكامل</label>
-                                <input type="text" name="name" placeholder="محمد السالم" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:ring-2 ring-yellow-500 outline-none transition-all" required />
+                                <label htmlFor="name" className="text-sm font-bold text-gray-500 mr-2 uppercase tracking-widest">الاسم الكامل</label>
+                                <input id="name" type="text" name="name" autoComplete="name" placeholder="محمد السالم" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:ring-2 ring-yellow-500 outline-none transition-all" required />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-bold text-gray-500 mr-2 uppercase tracking-widest">رقم الجوال</label>
-                                <input type="tel" name="phone" placeholder="05xxxxxxxx" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:ring-2 ring-yellow-500 outline-none transition-all" required />
+                                <label htmlFor="phone" className="text-sm font-bold text-gray-500 mr-2 uppercase tracking-widest">رقم الجوال</label>
+                                <input id="phone" type="tel" name="phone" autoComplete="tel" placeholder="05xxxxxxxx" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:ring-2 ring-yellow-500 outline-none transition-all" required />
                             </div>
                         </div>
                         <div className="space-y-2">
-                            <label className="text-sm font-bold text-gray-500 mr-2 uppercase tracking-widest">وصف العمل المطلوب</label>
-                            <textarea name="message" rows={4} placeholder="اكتب هنا تفاصيل اللوحة أو الواجهة..." className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:ring-2 ring-yellow-500 outline-none transition-all" required></textarea>
+                            <label htmlFor="message" className="text-sm font-bold text-gray-500 mr-2 uppercase tracking-widest">وصف العمل المطلوب</label>
+                            <textarea id="message" name="message" rows={4} placeholder="اكتب هنا تفاصيل اللوحة أو الواجهة..." className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:ring-2 ring-yellow-500 outline-none transition-all" required autoComplete="off"></textarea>
                         </div>
                         <SubmitButton />
                         {state.message && (

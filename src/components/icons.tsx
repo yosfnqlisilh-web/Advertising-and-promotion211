@@ -43,8 +43,9 @@ export const MailIcon = (props: React.SVGProps<SVGSVGElement>) => (
   );
 
   export const QuoteIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" {...props}>
-        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 9.983-9.57v7.203c-3.731 0-5.223 1.773-5.223 4.103v5.655h-4.76zm-14.017 0v-7.391c0-5.704 3.731-9.57 9.983-9.57v7.203c-3.731 0-5.223 1.773-5.223 4.103v5.655h-4.76z"/>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3v1"/>
+        <path d="M17 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3v1"/>
     </svg>
   );
 

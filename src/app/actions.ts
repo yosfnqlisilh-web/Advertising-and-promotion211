@@ -1,4 +1,4 @@
-'use server'
+'use server';
 
 import { z } from 'zod';
 import { Resend } from 'resend';
@@ -78,7 +78,7 @@ interface GeminiModel {
 
 // 3. دالة البوت الذكي (Gemini) - Fixed to prevent 404 and use stable models
 export async function getGeminiResponse(userPrompt: string): Promise<string> {
-    const apiKey = (process.env.GOOGLE_GENERATIVE_AI_API_KEY || "").trim();
+    const apiKey = (process.env.MY_GEMINI_API_KEY || "").trim();
     if (!apiKey) return "المفتاح مفقود.";
 
     const systemContext = `أنت المساعد الذكي 'فن' لمؤسسة فن الإعلان بالرياض. متخصص في الكلادينج واللوحات. 

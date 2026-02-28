@@ -116,9 +116,8 @@ const ChatbotIcon = () => {
             mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
             mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
             
-            // Clamp the rotation to prevent full spins and distortion
-            const maxRotationY = Math.PI / 2; // 90 degrees left/right
-            const maxRotationX = Math.PI / 3; // 60 degrees up/down
+            const maxRotationY = Math.PI / 2; 
+            const maxRotationX = Math.PI / 3; 
 
             targetRotation.y = THREE.MathUtils.clamp(mouse.x * 0.45, -maxRotationY, maxRotationY);
             targetRotation.x = THREE.MathUtils.clamp(-mouse.y * 0.25, -maxRotationX, maxRotationX);
@@ -169,7 +168,9 @@ const ChatbotIcon = () => {
         return () => {
             window.removeEventListener('mousemove', onMouseMove);
             resizeObserver.unobserve(currentMount);
-            currentMount.removeChild(renderer.domElement);
+            if (currentMount.contains(renderer.domElement)) {
+                currentMount.removeChild(renderer.domElement);
+            }
         };
     }, []);
 
@@ -178,7 +179,7 @@ const ChatbotIcon = () => {
 
 
 // --- Main Chatbot Component ---
-const NewChatbot = () => {
+export default function NewChatbot() {
     const [isVisible, setIsVisible] = useState(false);
     const [isChatOpen, setIsChatOpen] = useState(false);
     const [messages, setMessages] = useState<Message[]>([
@@ -282,5 +283,3 @@ const NewChatbot = () => {
         </div>
     );
 }
-
-export default NewChatbot;
