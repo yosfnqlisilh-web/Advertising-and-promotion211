@@ -75,7 +75,7 @@ export default function HomePageClient() {
     <div className="flex flex-col min-h-screen bg-gray-900 text-gray-200 font-sans text-right" dir="rtl">
       <main className="flex-1">
         {/* HERO SECTION */}
-        <section className="relative h-screen min-h-[800px] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed" style={{backgroundImage: "url('https://images.unsplash.com/photo-1542871793-1c39a82d7335?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
+        <section className="relative h-screen min-h-[800px] w-full flex items-center justify-center text-center bg-cover bg-center bg-fixed" style={{backgroundImage: "url('/images/hero-background.jpg')"}}>
           <div className="absolute inset-0 bg-black/75" />
           <div className="relative z-10 container px-4">
             <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold animated-gradient-text pb-4 leading-tight">واجهات فريدة<br/>ولوحات تترك أثراً</h1>

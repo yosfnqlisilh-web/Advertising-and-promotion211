@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewChatbot from "@/components/NewChatbot";
+import BackToTopButton from "@/components/BackToTopButton"; // Import the new component
 
 const notoKufiArabic = Noto_Kufi_Arabic({ 
   subsets: ["arabic"],
@@ -109,6 +110,7 @@ export default function RootLayout({
 
             gtag('config', 'G-5VHBDX5V7W');
             gtag('config', 'AW-17953122842');
+            gtag('config', 'AW-17979231936');
           `}
         </Script>
         <Header /> 
@@ -117,6 +119,7 @@ export default function RootLayout({
         </div>
         <Footer />
         <NewChatbot />
+        <BackToTopButton />
       </body>
     </html>
   );
